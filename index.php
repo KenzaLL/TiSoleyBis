@@ -19,19 +19,31 @@ session_start();
 <header> 
 <nav class="navbar navbar-expand-lg bg-black">
   <div class="container-fluid">
-    <a class="navbar-brand nav-a" href=""> <img src="./images/logo.png" alt=""> </a>
+    <a class="navbar-brand nav-a" href=""> <img src="" alt=""> Logo </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active nav-a" aria-current="page" href="#"> Notre histoire</a>
-        <a class="nav-link active nav-a" aria-current="page" href="#"> </a>
-        <a class="nav-link active nav-a" aria-current="page" href="#">Notre carte</a>
-        <a class="nav-link active nav-a" aria-current="page" href="#">Commande en ligne</a>
+        
+    <a class="nav-link active nav-a" href="#"> 
+          
+        
+ 
+      <label for="pet-select"></label>
+    <select name="pets" id="pet-select">
+    <option value=""> Qui sommes nous ?</option>
+    <option value="dog"> Notre histoire </option>
+    <option value="cat"> Nos engagements </option>
+    </select>
+  </a>
+
+        <a class="nav-link active nav-a" href="#"> Notre carte </a>
+        <a class="nav-link active nav-a" href="#">Commande en ligne</a>
         <a class="nav-link nav-a" href="#">Contact</a>
         <a class="nav-link nav-a" href="connexion.php">Connexion</a>
-        
+      
+
       </div>
     </div>
   </div>

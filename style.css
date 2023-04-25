@@ -1,9 +1,30 @@
 .nav-a { 
  color: white   !important;
-
 }
 
-img {  width:30%;
-        height:30%}
+img { width:30%;
+height:30%}
 
 
+.input { display: flex;
+        justify-content: center;
+        padding: 2%;
+        margin: 1%; }
+
+.titre { text-align: center;
+padding: 20px;}
+
+.ajout-btn { padding: 10px;
+display: flex;
+text-align: center;}
+
+.btn-compte { text-decoration: none;
+color: orange;
+box-shadow: 5px 5px 800px 5px #a1905a;
+}
+
+.border { border: 50px solid;
+        box-shadow: 5px 5px 200px 5px #ffc107;
+       padding: 3%;
+
+}
