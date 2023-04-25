@@ -30,29 +30,61 @@ session_start();
           
         
  
-      <label for="pet-select"></label>
-    <select name="pets" id="pet-select">
+      <label for=""></label>
+    <select name="" id="">
     <option value=""> Qui sommes nous ?</option>
-    <option value="dog"> Notre histoire </option>
-    <option value="cat"> Nos engagements </option>
+    <option value=""> Notre histoire </option>
+    <option value=""> Nos engagements </option>
     </select>
   </a>
 
         <a class="nav-link active nav-a" href="#"> Notre carte </a>
         <a class="nav-link active nav-a" href="#">Commande en ligne</a>
         <a class="nav-link nav-a" href="#">Contact</a>
-        <a class="nav-link nav-a" href="connexion.php">Connexion</a>
-      
-
+        <?php
+      if(isset($_SESSION['connecter']))
+     {
+       echo '<a class="nav-link nav-a deco" href="deconnexion.php">Déconnexion</a> <a class="nav-link nav-a deco" href="">'.$_SESSION["connecter"].'</a> ';
+      } else { echo '<a class="nav-link nav-a" href="connexion.php">Connexion</a>';
+      } 
+        ?> 
+        
+  
       </div>
     </div>
   </div>
 </nav>
-<h1> <?php echo $_SESSION['connecter']; ?> </h1>
+
+
+
+
+<main>
+<input list="search" id="enter" placeholder="Recherchez une pizza" >
+<datalist id="search">
+
+    </datalist>
+
+    <select id="base"> 
+      <option value="pizzaAll"> Toutes les pizzas </option>
+      <option value="cream"> Base crème </option>
+      <option value="tomato"> Base tomate </option>
+    </select>
+
+  <section class="d-flex flex-wrap justify-content-evenly mt-4">
+
+<?php 
+require_once("commande.php")
+?>
+  </section>
+</main>
+
+
+
 </header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-
 </script>
+
+<script src="script.js"></script>
 </body>
 
 

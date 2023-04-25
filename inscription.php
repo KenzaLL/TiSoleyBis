@@ -16,7 +16,7 @@
 </head>
 <body class="container">
     
-<form method="post" action="connexion.php">
+<form method="post" action="inscriptionbis.php">
 
 <div class="border"> 
 <h2 class="titre"> Création de votre compte </h2>
@@ -47,10 +47,10 @@
     <label class="form-check-label" for="exampleCheck1"> J'accepte les conditons </label>
   </div>
 
+
   <div class="mb-3">
-  <button type="submit" class="btn bg-secondary text-white" name="submit">
-  <a href="inscription.php" class="btn-compte"> Vous avez déjà un compte ? cliquez ici ! </a> 
-</button>
+  <button type="submit" class="btn bg-secondary text-white" name="submit"> Je m'inscris </button>
+</div>
 </div>
 </div>
 

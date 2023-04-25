@@ -30,11 +30,11 @@ $sql = "INSERT INTO users ( lastname , firstname , email , numberphone , passwor
 
 if (mysqli_query($connexion, $sql)) {
     echo "Inscription réussie.";
-    // header('Refresh:0.01; http://localhost/TiSoleyBis/connexion.php');
+    header('Refresh:0.01; http://localhost/TiSoleyBis/connexion.php');
+  
 } else {
     echo "Erreur: " . $sql . mysqli_error($connexion);
 }
-
 
 // Fermeture de la connexion à la base de données (important a retenir !!!!)
 mysqli_close($connexion);
