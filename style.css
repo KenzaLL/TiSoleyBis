@@ -1,5 +1,13 @@
 .nav-a { 
- color: white   !important;
+ color: white !important;
+}
+
+.nav-b { 
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 0, 0);
+  width: 118%;
+  padding: 1%;
+  
 }
 
 img { width:30%;
@@ -19,12 +27,38 @@ display: flex;
 text-align: center;}
 
 .btn-compte { text-decoration: none;
-color: orange;
-box-shadow: 5px 5px 800px 5px #a1905a;
+color: rgb(255, 255, 255);
+box-shadow: 5px 5px 800px 5px #ed8004;
 }
 
 .border { border: 50px solid;
-        box-shadow: 5px 5px 200px 5px #ffc107;
+        box-shadow: 5px 5px 200px 5px #ffef0b;
        padding: 3%;
 
 }
+
+.btn-commande { float: right;
+  background-color: black;
+margin-right: 2%;
+padding: 15px;
+border-radius: 25px 25px 25px 25px;}
+
+
+.background { background-image: url(https://img.freepik.com/photos-gratuite/delicieuse-pizza-napolitaine-planche_78826-3346.jpg?w=900&t=st=1682437566~exp=1682438166~hmac=fd0b9fbf0acfecf9cf7e39be523080e158756ca611ce7cdd407229458040a43d);
+              background-size: cover;
+              width: 100vw; 
+              height: 60vh;
+}
+
+.position-btn { display: flex;
+                justify-content: space-evenly;
+}
+
+.reseaux {display: flex;
+  justify-content: space-around;
+  background-color: rgb(240, 171, 45);
+  color: white;
+  padding-top: 15px;}
+
+
+body { background-color: black;}

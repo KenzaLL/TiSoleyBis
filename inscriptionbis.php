@@ -13,7 +13,7 @@ $connexion = mysqli_connect($servername, $username, $password, $dbname);
 if (!$connexion) {
   die("La connexion a échoué : " . mysqli_connect_error());
 }
-echo "La connexion à la base de données est établie avec succès";
+
 
 // chercher et stocker 
 if (isset($_POST['submit'])) { 

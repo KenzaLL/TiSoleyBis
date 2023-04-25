@@ -22,7 +22,7 @@ if($results->num_rows>0) {
     while($row=$results->fetch_assoc()) {
         echo '<article class="card mt-4 '. $row["base"] .' " style="width:250px ; height:100%">
         <img src="./images/'. $row["picture"] .'" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body pt-4">
           <h5 class="card-title">'. $row["title"] .' </h5>
           <p class="card-text"> base '. $row["base"] .'  </p>
           <p class="card-text" style="height:70px"> ingrédients : '. $row["description"] .' </p>
