@@ -1,0 +1,88 @@
+@media (min-width: 760px) { 
+
+}
+
+
+
+/* tel */
+@media (max-width: 1250px) { 
+    
+    .titre-histoire {
+        font-size: 20px;
+    }
+
+    .p-histoire { 
+        margin: 3%!important;
+        font-size: 15px;
+    }
+
+    .container-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reseaux { 
+        font-size: 12px;
+    }
+
+    .reseaux { 
+        font-size: 12px;
+    }
+
+
+    .btn-histoire { 
+        font-size: 16px;
+    }
+
+    .partenaires {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .size-contact { 
+        font-size: 15px;
+        padding-top:1%;
+    }
+
+    .img-contact {
+        margin: 5%;
+        
+    }
+
+    .site { 
+        margin-left: 15%!important;
+    }
+
+    .img-terre {
+        padding: 5%;
+    }
+
+    .titre-carte { 
+        font-size: 34px!important;
+        margin-top: ;
+    }
+
+    .titre {
+     padding: 30%;
+    }
+
+    .phrase { 
+        font-size: 20px;
+        margin: 4%;
+    }
+
+    .position-btn {
+        flex-direction: column;
+        
+    }
+
+    .btn-commande { 
+        margin: 2%;
+
+    }
+
+    #btn-commande {
+        margin-left: 16%;
+    }
+}

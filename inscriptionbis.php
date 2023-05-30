@@ -10,9 +10,9 @@ $dbname = "TiSoley";
 $connexion = mysqli_connect($servername, $username, $password, $dbname);
 
 // Vérification de la connexion
-if (!$connexion) {
-  die("La connexion a échoué : " . mysqli_connect_error());
-}
+    if (!$connexion) {
+        die("La connexion a échoué : " . mysqli_connect_error());
+        }
 
 
 // chercher et stocker 
@@ -31,13 +31,12 @@ $sql = "INSERT INTO users ( lastname , firstname , email , numberphone , passwor
 if (mysqli_query($connexion, $sql)) {
     echo "Inscription réussie.";
     header('Refresh:0.01; http://localhost/TiSoleyBis/connexion.php');
-  
 } else {
     echo "Erreur: " . $sql . mysqli_error($connexion);
 }
 
 // Fermeture de la connexion à la base de données (important a retenir !!!!)
-mysqli_close($connexion);
+    mysqli_close($connexion);
 }
 
 ?>
