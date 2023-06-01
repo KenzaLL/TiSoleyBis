@@ -59,8 +59,6 @@ input.addEventListener("keyup", function () {
   }
 });
 
- 
-
 
 function toggleDropdown() {
   var dropdown = document.getElementById("myDropdown");

@@ -2,7 +2,7 @@
 
 session_start();
 
-//$_SESSION["number"] = 0;
+
 
 
 // pizzas 

@@ -18,6 +18,7 @@ die("La connexion a échoué : " . mysqli_connect_error());
 
 if(isset($_SESSION["panierpizza"]) || isset($_SESSION["panierboissons"]) || isset($_SESSION["panierlasagnes"]) || isset($_SESSION["panierdesserts"])) {
     $total_panier=0;
+    // affichage du code //
     echo '<article class="donnee-panier text-white">
     <p class="img-article"> <img src="" alt=""></p>
     <p class="taille-panier"> Titre </p>
@@ -87,6 +88,7 @@ if(isset($_SESSION["panierpizza"]) || isset($_SESSION["panierboissons"]) || isse
                 unset($_SESSION["panierboissons"][$key]);
     
             }
+            // redirection 
             header("location: panier.php");
         }
 
