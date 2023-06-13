@@ -26,6 +26,7 @@ if (isset($_POST['submit'])) {
     
 // l'envoi vers la bdd
 
+$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 $sql = "INSERT INTO users ( lastname , firstname , email , numberphone , password ) VALUES ('$lastname', '$firstname', '$email', '$numberphone', '$password')";
 
 if (mysqli_query($connexion, $sql)) {

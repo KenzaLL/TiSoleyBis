@@ -19,17 +19,58 @@ die("La connexion a échoué : " . mysqli_connect_error());
 if(isset($_SESSION["panierpizza"]) || isset($_SESSION["panierboissons"]) || isset($_SESSION["panierlasagnes"]) || isset($_SESSION["panierdesserts"])) {
     $total_panier=0;
     // affichage du code //
-    echo '<article class="donnee-panier text-white">
-    <p class="img-article"> <img src="" alt=""></p>
-    <p class="taille-panier"> Titre </p>
-    <p class="taille-panier"> Quantité </p>
-    <div class="taille-panier">
-    <img class="poubelle"src="./images/poubelle.png" alt="poubelle" width="50px"> </button>
-    </div>
-    <p class="taille-panier"> Prix </p>
-    </article>';
+    echo '<div class="card bg-card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col"><h4 class="text-white"><b> Récapitulatif de votre commande</b></h4></div>
+                </div>
+            </div>    
+            <div class="row border-top border-bottom">
+                <div class="row align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
+                    <div class="col text-white">
+                        <div class="row">Shirt</div>
+                    </div>
+                    <div class="col text-white">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row align-items-center">
+                    <div class="col-2"></div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom">
+                <div class="row align-items-center">
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 summary">
+            <div><h5 class="text-white"><b>Summary</b></h5></div>
+            <div class="row">
+            </div>
+            
+            <div class="row">
+                <div class="col text-white my-3">TOTAL</div>
+                <div class="col text-white my-3">&euro; 137.00</div>
+            </div>
+            <div class="flex__child no-stepper my-3 ">
+                <div>
+                    <label for="no_step" class="title-creneau" >
+                        Veuillez choisir une heure entre 18h30 et 20h30
+                    </label>
+                    <input type="time" id="heure">
+                </div>
+            <button class="btn m-0"> VALIDER LA COMMANDE</button>
+        </div>
+    </div> 
+</div>';
+
+// supprimer les achats paniers
     if(isset($_SESSION["panierpizza"])) {
-    // supprimer les achats paniers
     if (isset($_POST["submit"]) && $_POST["submit"] == "supprimer" && isset($_POST["id_produitpizza"])) {
             $_SESSION["number"] -=1;
             $id_produitpizza = $_POST["id_produitpizza"];

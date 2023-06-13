@@ -2,9 +2,6 @@
 
 session_start();
 
-
-
-
 // pizzas 
     if(isset($_POST['submitpizza'])) {
         $id_produitpizza=$_POST["id_produitpizza"];
