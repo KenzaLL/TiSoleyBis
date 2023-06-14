@@ -46,7 +46,7 @@ body {
 
 .cta { 
     margin-left: 42%; 
-    background-color: #f8d746;
+    background-color: #f1812a;
     border: 2px solid #ffffff;
     border-radius: 20px 20px 20px 20px;
     padding: 15px;
@@ -90,6 +90,16 @@ body {
         .btn-commande:hover {
             background-color: #ce561c;
             }
+
+            #btn-commande { 
+                background-color: black;
+                margin-right: 2%;
+                padding: 15px;
+                border-radius: 25px;
+                border: 1px solid #ce561c!important;
+                }
+
+             
 
 
 
@@ -181,15 +191,17 @@ margin-top: 3.2%;
 
 /* connexion et inscription */
 
-.background-connexion {
-background-image: url(../images/background-connexion.jpg);
-background-size: cover;
+.colore {
+    background-color: rgb(61, 44, 44) !important;
+}
+.body {
+    background-image: url(../images/background-connexion.jpg) !important; 
+    background-size: cover;
 }
 
 .border {
     border: 1px solid #ce561c!important;
     border-radius: 15px;
-    background-color: black;
     box-shadow: 20px 20px 20px rgb(0, 0, 0);
     padding: 3%;
     }
@@ -393,11 +405,16 @@ margin-bottom: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
   color:black;
-  background-color : rgb(219, 198, 147) ;
-  padding: 4% 20%;
+  background-color : #f1812a ;
+  padding: 3% 7%;
   border-radius: 30px;
 }
 
+.carte { 
+    padding-right: 10%;
+    padding-top: 28px;
+    text-decoration: underline;
+}
 
 /* deuxieme partie */
 
@@ -426,11 +443,6 @@ margin-bottom: 1%;
     margin-right: 2%;
 }
 
-
-
-
-
-
 .artpp {
     display: flex;
     justify-content: center;
@@ -455,3 +467,159 @@ margin-bottom: 1%;
     width: 100%;
     height: 40vh;
 }
+
+.cta {
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+  
+  .cta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta:hover:before {
+    opacity: 1;
+  }
+  
+  .cta h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .cta p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .cta .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta .btn:hover {
+    background-color: #e64d00;
+    transform: scale(1.05);
+  }
+  
+
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .section {
+    flex-basis: 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .order:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-details span {
+    font-weight: bold;
+  }
+  
+  .order-status {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .order-status span {
+    font-weight: normal;
+  }
+  
+  .order-history .order {
+    background-color: #f5f5f5;
+  }
+  
+  .order-history .order:hover {
+    background-color: #f1f1f1;
+  }
+  

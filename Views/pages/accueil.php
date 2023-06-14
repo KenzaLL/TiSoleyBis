@@ -1,53 +1,54 @@
-<?php 
+<?php
 
-ob_start();
+ob_start(); 
 
 ?>
 
-
     <h1 class="titre"> Bienvenue chez Ti'Soley ! </h1>
-        <div> 
-            <a class="cta" href="commande.php"> Commandez en ligne ! </a>
-        </div>
+    <div class="cta">
+  <h2>Commandez maintenant!</h2>
+  <p>Découvrez nos délicieuses pizzas faites avec amour.</p>
+  <a href="commande.html" class="btn">Commander</a>
+</div>
         
         <section class="band lol text-white">
     <div class="flex space">
-       <article class="flex coller">
-            <img class="bandImage" src="./images/1664.jpg" alt="">
-            <div>
-                <h3>PIZZA</h3>
-                <p>odit architecto!</p>
+        <article class="coller">
+            <img class="bandImage" src="./images/pizza.png" alt="">
+            <div class="flex-lg-column">
+                <p>Pizzas artisanales </p>
             </div>
-       </article>
-       <article class="flex coller">
-            <img class="bandImage" src="./images/1664.jpg" alt="">
+        </article>
+        <article class=" coller">
+            <img class="bandImage" src="./images/poignee.png" alt="">
             <div>
-                <h3>PIZZA</h3>
-                <p>odit architecto!</p>
+                <p> Produits locaux & de saison</p>
             </div>
-       </article> 
+        </article> 
     </div>
     <div class="flex space">
-       <article class="flex coller">
-            <img class="bandImage" src="./images/1664.jpg" alt="">
+        <article class=" coller">
+            <img class="bandImage" src="./images/france.png" alt="">
             <div>
-                <h3>PIZZA</h3>
-                <p>odit architecto!</p>
+                <p> Circuit court</p>
             </div>
-       </article>
-       <article class="flex coller">
-            <img class="bandImage" src="./images/1664.jpg" alt="">
+        </article>
+        <article class=" coller">
+            <img class="bandImage" src="./images/coeur.png" alt="">
             <div>
-                <h3>PIZZA</h3>
-                <p>odit architecto!</p>
+                <p> Confectionnées avec amour</p>
             </div>
-       </article> 
+        </article> 
     </div>
 </section>
 
     <hr class="text-white">
+    <div class="d-flex justify-content-between "> 
+
         <h2 class="text-white p-2 m-2"> Qu'est-ce qu'on mange ? </h2>
-    
+       <a class="carte"href=""> Voir la carte complète</a>
+
+    </div>
 
     
 
@@ -57,13 +58,13 @@ ob_start();
         <div class="image-container art">
             <div class="image-wrapper">
                 <img src="./public/images/chevremiel.jpg" alt="Votre image" width="400px" >
-                <button class="center-button">Cliquez ici</button>
+                <button class="center-button"> PIZZAS </button>
             </div>
         </div>
         <div class="image-container art2">
             <div class="image-wrapper">
                 <img src="./public/images/chevremiel.jpg" alt="Votre image" width="400px" >
-                <button class="center-button">Cliquez ici</button>
+                <button class="center-button"> PRÉPARATIONS MAISONS </button>
             </div>
         </div>
     </section> 
@@ -71,13 +72,13 @@ ob_start();
         <div class="image-container art2">
             <div class="image-wrapper">
                 <img src="./public/images/chevremiel.jpg" alt="Votre image" width="400px" >
-                <button class="center-button">Cliquez ici</button>
+                <button class="center-button"> BOISSONS </button>
             </div>
         </div>
         <div class="image-container art">
             <div class="image-wrapper">
                 <img src="./public/images/chevremiel.jpg" alt="Votre image" width="400px" >
-                <button class="center-button">Cliquez ici</button>
+                <button class="center-button"> DESSERTS </button>
             </div>
         </div>
     </section> 

@@ -1,11 +1,7 @@
 
 <?php 
 
-session_start();
 ob_start();
-
-include 'configBdd.php';
-require 'inscriptionbis.php';
 
 
 // Vérifie si l'utilisateur est connecté
@@ -44,13 +40,13 @@ $connexion = null;
                 <a class="nav-link dropdown-toggle nav-a" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Qui sommes nous ?</a>
             <ul class="dropdown-menu bg-black">
                 <li>
-                    <a class="dropdown-item text-white" href="histoire.php"> Notre histoire</a>
+                    <a class="dropdown-item text-white" href="histoire"> Notre histoire</a>
                 </li>
                 <li>
-                    <a class="dropdown-item text-white" href="partenaires.php">Nos partenaires </a>
+                    <a class="dropdown-item text-white" href="partenaires">Nos partenaires </a>
                 </li>
                 <li>
-                    <a class="dropdown-item text-white" href="terredessences.php"> Terre d'essences</a>
+                    <a class="dropdown-item text-white" href="terredessences"> Terre d'essences</a>
                 </li>
                 </ul>
                 </li>
@@ -63,20 +59,20 @@ $connexion = null;
             </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a" href="./contact.php">Contact</a>
+                    <a class="nav-link nav-a" href="contact">Contact</a>
                 </li>
                     <?php
                 
                 if ($is_connected) : ?>
                     <li class="nav-item">
-                        <a class="nav-link nav-a deco" href="deconnexion.php">Déconnexion</a>
+                        <a class="nav-link nav-a deco" href="deconnexion">Déconnexion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-a deco" href=""><?php echo $_SESSION["id"]; ?></a>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">
-                        <a class="nav-link nav-a" href="connexion.php">Connexion</a>
+                        <a class="nav-link nav-a" href="connexion">Connexion</a>
                     </li>
                     <?php if (isset($error_message)) : ?>
                         <script>alert('La connexion a échoué');</script>
@@ -86,10 +82,10 @@ $connexion = null;
                 
                 
                                 <li class="nav-item">
-                                    <a class="nav-link nav-a" href="./panier.php"> <img class="panier" src="panier.png" alt="panier"></a>
+                                    <a class="nav-link nav-a" href="panier"> <img class="panier" src="panier.png" alt="panier"></a>
                                 </li>
                                 </ul>
-                              <p class="text-white"> <?php
+                            <p class="text-white"> <?php
                              //echo $_SESSION["number"]; ?> </p> 
                             </div>
                         </div>

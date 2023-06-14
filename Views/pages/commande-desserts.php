@@ -17,16 +17,16 @@ ob_start();
         <hr class="text-white"> 
 
         <div class="position-btn ">
-            <a class="btn btn-dark btn-commande"href="./commande.php"> Pizzas </a>
-            <a class="btn btn-dark btn-commande" href="./commande-lasagnes.php"> Nos préparations maisons </a>
-            <a class="btn btn-dark btn-commande"href="./commande-desserts.php"> Desserts </a>       
-            <a class="btn btn-dark btn-commande"href="./commande-boissons.php"> Boissons </a>
+        <a class="btn btn-dark btn-commande"href="commande"> Pizzas </a>
+            <a class="btn btn-dark btn-commande" href="preparations"> Nos préparations maisons </a>
+            <a class="btn btn-dark btn-commande"href="desserts"> Desserts </a>       
+            <a class="btn btn-dark btn-commande"href="boissons"> Boissons </a>
         </div>
 
         <section class="d-flex flex-wrap justify-content-evenly m-3">
 
         <?php 
-        require_once "commande-dessertsbis.php";
+        require_once "./Models/commande-dessertsbis.php";
         ?>
         </section>
 

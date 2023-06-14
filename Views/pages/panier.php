@@ -11,7 +11,7 @@ ob_start();
         <section class="panier-entier">
     
 <?php
-require "panierbis.php";
+require "./Models/panierbis.php";
 ?>
 
 

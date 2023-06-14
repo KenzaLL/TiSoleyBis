@@ -1,6 +1,8 @@
 <?php 
 
-ob_start();
+
+require 'inscriptionbis.php'
+
 
 ?>
 
@@ -11,7 +13,7 @@ ob_start();
         <h2 class="titre text-white"> Création de votre compte </h2>
       <div class="mb-3 text-white">
           <label for="exampleInputEmail1" class="form-label"> Nom </label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"name="lastname" required>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"name="lastname">
       </div>
       <div class="mb-3 text-white">
           <label for="exampleInputEmail1" class="form-label"> Prénom </label>
@@ -43,10 +45,9 @@ ob_start();
 
     <?php 
 
-$content = ob_get_clean();
-
 $title = "Accueil";
 
 require './Views/base.php';
+
 
 ?>

@@ -1,8 +1,8 @@
 <?php 
 // Informations de connexion à la base de données
 $servername = "localhost"; // Nom du serveur de la base de données
-$username = "wazabi"; // Nom d'utilisateur de la base de données
-$password = "nokia"; // Mot de passe de la base de données
+$username = "admin"; // Nom d'utilisateur de la base de données
+$password = "admin"; // Mot de passe de la base de données
 $dbname = "TiSoley"; // Nom de la base de données
 
 // Création de la connexion PDO
@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) { // Vérifie si le formulaire a été soumis
         $_SESSION['id'] = $user['id']; // Stocke la valeur du champ id dans la variable de session 'id'
         echo 'Connexion réussie' . '<br>'; // Affiche un message de succès
         // Redirection
-         header('Refresh:0; http://localhost/kenzaa/TiSoleyBis/'); // Redirige l'utilisateur vers une autre page
+         header('Refresh:0; http://localhost/TiSoleyBis/'); // Redirige l'utilisateur vers une autre page
         exit(); // Arrête l'exécution du script
     } else {
         echo '<p class="text-danger text-center">  La connexion a échoué  </p>' . '<br>'; // Affiche un message d'erreur si les données de connexion sont incorrectes
