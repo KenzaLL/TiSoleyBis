@@ -21,7 +21,7 @@ $results = $connexion->query($sql);
 if($results->num_rows>0) { 
     while($row=$results->fetch_assoc()) {
 echo '<article class="card mt-4 bg-black mb-5" style="width:250px ; height:100%">
-        <img src="./images/'. $row["picture"] .'" class="card-img-top" alt="...">
+        <img src="./public/images/'. $row["picture"] .'" class="card-img-top" alt="...">
             <div class="card-body pt-4">
             <h5 class="card-title text-white">'. $row["title"] .' </h5>
             <p class="card-text text-white" style="height:70px"> '. $row["description"] .' </p>
@@ -36,6 +36,4 @@ echo '<article class="card mt-4 bg-black mb-5" style="width:250px ; height:100%"
 }
 
 ?>
-
-<?php 
 

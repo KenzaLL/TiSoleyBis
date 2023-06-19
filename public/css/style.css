@@ -1,5 +1,5 @@
 
-/* Fichier base */
+/* effet sur toute la page */
 
 * { 
     margin: 0;
@@ -7,17 +7,23 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
 body {
     background-color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: white; 
 }
 
 .links { 
     text-decoration: none;
 }
 
+/* barre de navigation */
+
 .logo {  
-    background-image: url(../images/logo.png);
+    background-image: url(../css/logo.png) !important;
     background-size: contain;
     background-repeat: no-repeat;
     height: 12vh;
@@ -35,8 +41,9 @@ body {
     padding: 1%;
 }
 
-
+/* fin de barre de navigation */
 /* titre de la page accueil */
+
 .titre { 
     text-align: center;
     padding: 20px;
@@ -44,6 +51,7 @@ body {
     font-size: 47px;
 }
 
+/* call to action page d'accueil */
 .cta { 
     margin-left: 42%; 
     background-color: #f1812a;
@@ -53,10 +61,177 @@ body {
     width: 20%;
 }
 
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.cta {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #ce561c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    width: 50%;
+    text-align: center;
+    margin-left: 2%;
+}
+
+.cta:hover {
+    background-color: #000000;
+}
+
+.cta span {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* fin */
+/* background avec 4 icones de la page accueil */
+
+.carte { 
+    padding-right: 10%;
+    padding-top: 28px;
+    text-decoration: underline;
+}
+
+.container1 {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/background-pizza-cosy-values-ff188e68.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.icon {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon span {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+/* fin */
+/* catégorie de commande */
+
+.flex {
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
 
 
+.image-container {
+    width: 30%; 
+    height: 20vh; 
+    border: 1px solid #000; 
+    border-radius: 30px;
+}
 
-/* commande en ligne */
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.center-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: #f1812a;
+    padding: 3% 7%;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.center-button:hover {
+    background-color: #ff9c59;
+    color: white;
+}
+
+.image-container2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container2 img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.image-container2:hover img {
+    filter: blur(4px);
+    transform: scale(1.1);
+}
+
+
+/* container des deux div */
+.artpp {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* première div */
+.set {
+    width: 45%;
+    margin: 0.5%;
+}
+.set2 {
+    width: 55%;
+    margin: 0.5%;
+}
+
+/* deuxième div */
+.art {
+    margin-top: 2%;
+    width: 100%;
+    height: 60vh;
+}
+.art2 {
+    margin-top: 2%;
+    width: 100%;
+    height: 40vh;
+}
+/* fin de catégories de commande */
+/* fin de la page ACCUEIL */
+
+/* Page COMMANDE EN LIGNE*/
 
 .background { 
     background-image: url(https://img.freepik.com/photos-gratuite/delicieuse-pizza-napolitaine-planche_78826-3346.jpg?w=900&t=st=1682437566~exp=1682438166~hmac=fd0b9fbf0acfecf9cf7e39be523080e158756ca611ce7cdd407229458040a43d);
@@ -77,29 +252,40 @@ body {
     justify-content: space-evenly; 
     }
 
-
 /* boutons catégories */
-    .btn-commande { 
-        background-color: black;
-        margin-right: 2%;
-        padding: 15px;
-        border-radius: 25px;
-        border: 1px solid #ce561c!important;
-        }
 
-        .btn-commande:hover {
-            background-color: #ce561c;
-            }
+.btn-commande { 
+    background-color: black;
+    margin-right: 2%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ce561c!important;
+}
 
-            #btn-commande { 
-                background-color: black;
-                margin-right: 2%;
-                padding: 15px;
-                border-radius: 25px;
-                border: 1px solid #ce561c!important;
-                }
+.btn-commande:hover {
+    background-color: #ce561c;
+}
 
-             
+/* barre de recherche */
+#enter { background-color: rgb(0, 0, 0) !important;
+}
+
+/* card */
+
+.card { 
+    border: 1px solid #ed8004;
+}
+
+
+
+/* ajouter au panier */
+#btn-commande { 
+    background-color: black;
+    margin-right: 2%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ce561c!important;
+}
 
 
 
@@ -125,27 +311,19 @@ box-shadow: 5px 5px 800px 5px #2e2113;
 
 
 
-
-#enter { background-color: white !important;}
-
-
 .btn-panier { 
 background-color: #ce561c; 
 border-radius: 25px 25px 25px 25px;
 }
 
 
-.card { 
-border: 1px solid #ed8004;
-}
+
 
 .dropdown-item:hover { 
 background-color: #ce561c;
 }
 
-a {
-text-decoration: none;
-color: white; }
+
 
 .panier { 
 width: 25px;
@@ -235,9 +413,6 @@ margin-bottom: 1%;
 }
 
 
-
-
-
 .btn-test {
     text-align: center;
     border: 1px solid #ce561c;
@@ -259,7 +434,6 @@ margin-bottom: 1%;
     
 }
 
-/* page index  */
 
 .position-article { 
     display: flex;
@@ -272,15 +446,6 @@ margin-bottom: 1%;
 
 }
 
-.background-savoir {
-    float: right;
-}
-
-
-
-
-
-
 /* page des partenaires */
 
 
@@ -288,9 +453,6 @@ margin-bottom: 1%;
 .titre-histoire { 
     font-size: 50px;
 }
-
-
-/* texte */
 
 .text-histoire { 
     font-size: 20px;
@@ -323,27 +485,26 @@ margin-bottom: 1%;
 
 /* page de contact */
 
+/* taille du paragraphe */
 .size-contact { 
-    color: #ed8004;
     font-size: 20px;
+
 }
 
-.img-contact {
-    float: left;
-    padding: 4%;
-}
-
+/* span */
 .color-contact { 
     color: #ed8004;
 }
 
+/* fin */
+
+/* aucune idée de l'emplacement */
 
 .site { 
     margin-left: 40%;
 }
 
-
-
+/* //////////////////////////////////////// */
 
 /* footer */
 
@@ -368,258 +529,48 @@ margin-bottom: 1%;
 
 
 
-/* //////////////////////////////////////// */
+/* PAGE AMDIN DE LA CLIENTE */
 
-
-.flex {
-    display: flex;
-    justify-content:space-around ;
-    align-items: center;
-}
-
-
-.image-container {
-  width: 30%; 
-  height: 20vh; 
-  border: 1px solid #000; 
-  border-radius: 30px;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.image-wrapper img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 30px;
-}
-
-.center-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:black;
-  background-color : #f1812a ;
-  padding: 3% 7%;
-  border-radius: 30px;
-}
-
-.carte { 
-    padding-right: 10%;
-    padding-top: 28px;
-    text-decoration: underline;
-}
-
-/* deuxieme partie */
-
-.lol {
-    display: flex;
-    /*flex-direction: column;*/
-    justify-content: center;
-}
-.space {
-    margin: 2%;
-}
-.coller {
-    justify-content: center !important;
-}
-.band{
-    margin: 3% 0; /*dessous de commande */
-    width : 95%;
-    height:45vh;
-    background-image: url(../images/band.png.svg);
-    background-position: right;
-    background-size: cover;
-} 
-.bandImage {
-    width: 35%;
-    border-radius: 15px;
-    margin-right: 2%;
-}
-
-.artpp {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-}
-.set {
-    width: 45%;
-    margin: 0.5%;
-}
-.set2 {
-    width: 55%;
-    margin: 0.5%;
-}
-.art {
-    margin-top: 2%;
-    width: 100%;
-    height: 60vh;
-}
-.art2 {
-    margin-top: 2%;
-    width: 100%;
-    height: 40vh;
-}
-
-.cta {
-    position: relative;
-    overflow: hidden;
-    background-color: #f5f5f5;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: opacity 0.3s ease;
-    z-index: -1;
-  }
-  
-  .cta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .cta:hover:before {
-    opacity: 1;
-  }
-  
-  .cta h2 {
-    font-size: 28px;
-    color: #333;
-  }
-  
-  .cta p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .cta .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff5500;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta .btn:hover {
-    background-color: #e64d00;
-    transform: scale(1.05);
-  }
-  
-
-
-
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  
-  }
-  
-  header {
+.container-admin {
     background-color: #333;
     color: #fff;
     padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
-  main {
+}
+
+.titre-admin {
+    text-align: center;
+}
+
+.commande {
+    background-color: rgb(77, 217, 34);
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .section {
-    flex-basis: 48%;
-    background-color: #fff;
+}
+
+.close-btn {
+    color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section h2 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .order-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .order {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .order:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .order p {
-    margin: 0;
-    color: #555;
-  }
-  
-  .order-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .order-details span {
-    font-weight: bold;
-  }
-  
-  .order-status {
-    font-size: 14px;
-    color: #888;
-  }
-  
-  .order-status span {
-    font-weight: normal;
-  }
-  
-  .order-history .order {
-    background-color: #f5f5f5;
-  }
-  
-  .order-history .order:hover {
-    background-color: #f1f1f1;
-  }
-  
+    background-color: red;
+    border: 1px solid #ce561c;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.block-admin {
+        padding: 20px;
+}
+
+.orders, .order-history {
+    margin-bottom: 30px;
+}
+
+.order-list {
+        list-style: none;
+        padding: 0;
+}
+      
+      .order {
+        background-color: #f5f5f5;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+   

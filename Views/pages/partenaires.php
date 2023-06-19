@@ -19,15 +19,15 @@ ob_start();
 
 
     <div class="d-flex flex-wrap justify-content-center"> 
-        <img class="m-3 partenaires"src="./images/marcel.png" alt="logo marcel and fils" width="500px" height="300px">
-        <img class="m-3 partenaires"src="./images/alpes.jpg" alt="logo alpes distribution" width="500px" height="300px">
+        <img class="m-3 partenaires"src="./public/images/marcel.png" alt="logo marcel and fils" width="500px" height="300px">
+        <img class="m-3 partenaires"src="./public/images/alpes.jpg" alt="logo alpes distribution" width="500px" height="300px">
     </div>
 
     <p class="btn-histoire text-white text-center p-2 partenairesbis"> Moulin pichard bio & La fromagerie du verdon </p>
 
     <div class="d-flex flex-wrap justify-content-center"> 
-        <img class="partenaires" src="./images/pichard.jpeg" alt="moulin pichard"width="500px" height="300px">
-        <img class="m-3 partenaires"src="./images/fromagerie.jpg" alt="logo de la fromagerie" width="500px" height="315px">
+        <img class="partenaires" src="./public/images/pichard.jpeg" alt="moulin pichard"width="500px" height="300px">
+        <img class="m-3 partenaires"src="./public/images/fromagerie.jpg" alt="logo de la fromagerie" width="500px" height="315px">
     </div>
 
     <?php 
