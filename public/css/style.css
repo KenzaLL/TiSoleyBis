@@ -42,6 +42,14 @@ a {
 }
 
 /* fin de barre de navigation */
+
+.bg-acc { 
+  background-image: url(../images/backgroundacc.png);
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100vw;
+}
+
 /* titre de la page accueil */
 
 .titre { 
