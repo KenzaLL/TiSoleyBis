@@ -1,29 +1,8 @@
 <?php
 
 session_start();
-// Configuration pour afficher les erreurs PHP
 
-// Mise en mémoire tampon de la sortie
-ob_start();
-// Information de connexion à la base de données
-$servername = "localhost";
-$username = "admin";
-$password = "admin";
-$dbname = "tisoley";
-
-// Création de la connexion PDO
-
-try {
-    // Création de la connexion PDO
-    $connexion = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
-    
-    // Configuration des options de PDO
-    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-} catch(PDOException $e) {
-    // Affichage d'un message d'erreur en cas de problème de connexion
-    die("La connexion à la base de données a échoué : " . $e->getMessage());
-}
+require_once 'connexionBDD.php';
 
 // Vérification de la soumission du formulaire
 if (isset($_POST['submit'])) {

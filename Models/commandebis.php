@@ -1,32 +1,37 @@
-<?php 
+
+      
+<?php require_once 'panier/_header.php'; ?>
 
 
-require dirname(__FILE__,2).'/Views/config.php';
-
-$sql = "select * from pizza";
-$results = $connexion->query($sql);
-
-if($results->rowCount()>0) { 
-    while($row=$results->fetch()) {
-        echo '<article class="card m-4 bg-black '. $row["base"] .' " style="width:250px ; height:100%">
-        <img src="./public/images/'. $row["picture"] .'" class="card-img-top" alt="...">
-        <div class="card-body pt-5">
-          <h5 class="card-title text-white">'. $row["title"] .' </h5>
-          <p class="card-text text-white"> base '. $row["base"] .'  </p>
-          <p class="card-text text-white" style="height:70px"> ingrédients : '. $row["description"] .' </p>
-          <p class="card-text text-white"> Prix : '. $row["price"] .'€   </p>
-          <form method="post" action="ajoutPanier.php">
-          <input type="hidden" name="id_produitpizza" value="'. $row["id"] .'">
-          <input class="submit text-white" name="submitpizza" id="btn-commande" type="submit" value="Ajouter au panier">;
-          </form>
+<section class="featured-products">
+  <div class="row">
+    <?php $pizzas = $DB->query('SELECT * FROM `pizza` ORDER BY `id` DESC'); ?>
+    <?php foreach ($pizzas as $pizza): ?>
+      <div class="col-md-3">
+        <img src="public/images/<?php echo $pizza->picture; ?>" width="100px">
+        <article class="card m-4 bg-black" style="width: 250px; height: 100%">
+          <div class="card-body m">
+            <h5 class="card-title text-white"><?php echo $pizza->title; ?></h5>
+            <p class="card-text text-white"><?php echo $pizza->base; ?></p>
+            <p class="card-text text-white" style="height: 70px"><?php echo $pizza->description; ?></p>
+            <p class="card-text text-white"><?php echo number_format($pizza->price, 2, ','); ?></p>
+            <a class="btn-commande" href="panier/addpanier.php?id=<?= $pizza->id; ?>">Ajouter au panier</a>
           </div>
-          </article>';
-        }
-      }
-      
-      
-      
-      ?>
+        </article>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
 
+          
 
-<!-- <input type="hidden" name="name_produit" value="pizza"> -->
+<!-- // require_once 'connexionBDD.php';
+
+// $sql = "select * from pizza";
+// $results = $connexion->query($sql);
+
+// if($results->rowCount()>0) { 
+//     while($row=$results->fetch()) {
+//         }
+//       }
+       -->

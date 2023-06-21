@@ -18,10 +18,10 @@ ob_start();
     <a class="btn-commande site bg"  href="https://terredessences.net/"> Cliquez ici pour accéder à notre site internet </a>
 
     <div class="d-flex flex-wrap justify-content-evenly m-5 mt-5">
-        <img class="img-terre"src="./images/coffret.jpg" alt="coffret produits naturels" width="300px">
-        <img class="img-terre"src="./images/coffret3.jpg" alt="coffret produits naturels" width="300px">
-        <img class="img-terre"src="./images/coffret4.jpg" alt="coffret produits naturels" width="300px">
-        <img class="img-terre"src="./images/cadeau.jpg" alt="coffret produits naturels" width="300px">
+        <img class="img-terre"src="public/images/coffret.jpg" alt="coffret produits naturels" width="300px">
+        <img class="img-terre"src="public/images/coffret3.jpg" alt="coffret produits naturels" width="300px">
+        <img class="img-terre"src="public/images/coffret4.jpg" alt="coffret produits naturels" width="300px">
+        <img class="img-terre"src="public/images/cadeau.jpg" alt="coffret produits naturels" width="300px">
     </div>
 
     <?php 

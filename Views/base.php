@@ -2,25 +2,23 @@
 <?php 
 
 ob_start();
-
-
 // Vérifie si l'utilisateur est connecté
 $is_connected = isset($_SESSION['connecter']);
 // Fermeture de la connexion à la base de données
 $connexion = null;
 
-
 ?>
 
-<!-- Code html static qui est sur toutes les pages -->
 
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Site de pizzeria">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="./public/css/style.css">
         <link rel="stylesheet" href="./public/css/mediaqueries.css">
         <title> <?= $title ?></title>
@@ -29,7 +27,7 @@ $connexion = null;
     <body>
         <nav class="navbar navbar-expand-lg nav-b lead">
             <div class="container-fluid">
-            <a class="navbar-brand logo" href="#"> </a>
+                <a class="navbar-brand logo" href="#"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,29 +37,19 @@ $connexion = null;
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-a" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Qui sommes nous ?</a>
             <ul class="dropdown-menu bg-black">
-                <li>
-                    <a class="dropdown-item text-white" href="histoire"> Notre histoire</a>
-                </li>
-                <li>
-                    <a class="dropdown-item text-white" href="partenaires">Nos partenaires </a>
-                </li>
-                <li>
-                    <a class="dropdown-item text-white" href="terredessences"> Terre d'essences</a>
-                </li>
-                </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-a" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">Commande en ligne</a>
-            <ul class="dropdown-menu bg-black">
-                <li>
-                    <a class="dropdown-item text-white" href="commande"> Notre carte </a>
-                </li>        
+                <li>  <a class="dropdown-item text-white" href="histoire"> Notre histoire</a> </li>
+                <li> <a class="dropdown-item text-white" href="partenaires">Nos partenaires </a></li>
+                <li> <a class="dropdown-item text-white" href="terredessences"> Terre d'essences</a></li>
             </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="contact">Contact</a>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-a" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">Commande en ligne</a>
+            <ul class="dropdown-menu bg-black">
+                <li><a class="dropdown-item text-white" href="commande"> Notre carte </a> </li>        
+            </ul>
                 </li>
-                    <?php
+                <li class="nav-item"><a class="nav-link nav-a" href="contact">Contact</a></li>
+                <?php
                 
                 if ($is_connected) : ?>
                     <li class="nav-item">
@@ -82,7 +70,7 @@ $connexion = null;
                 
                 
                                 <li class="nav-item">
-                                <a class="nav-link nav-a" href="./panier.php"> <img class="panier" src="panier.png" alt="panier"></a>
+                                <a class="nav-link nav-a" href="panier"> <img src="panier.png" alt="" width="25"></a>
                                 </li>
                                 </ul>
                             <p class="text-white"> <?php
@@ -98,7 +86,7 @@ $connexion = null;
 
 
 <footer>
-        <div class="reseaux mt-5">
+        <div class="reseaux">
             <p> 
                 <img src="./public/images/tel.png" alt="téléphone" width="40px"> 
                 <a href="tel:0618728007"> 06 18 72 80 07</a> 

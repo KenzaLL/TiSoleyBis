@@ -7,8 +7,8 @@ require 'inscriptionbis.php'
 ?>
 
 
-    
-    <form method="post" action="inscriptionbis.php">
+<div class="body p-5">
+    <form method="post" action="inscription.php">
       <div class="border m-5 p-4"> 
         <h2 class="titre text-white"> Création de votre compte </h2>
       <div class="mb-3 text-white">
@@ -38,6 +38,7 @@ require 'inscriptionbis.php'
       </div>
       <div class="mb-2 mt-3">
         <button type="submit" class="btn text-white btn-connexion" name="submit"> Je m'inscris </button>
+      </div>
       </div>
       </div>
       </div>

@@ -14,7 +14,7 @@ ob_start();
         <p class="m-0 p-histoire"> Hormis les œufs qui proviennent de notre poulailler et les tomates de notre jardin, nos partenaires nous aident à vous régaler avec des produits locaux et d’une fraicheur exceptionnelle ! </p>
         <p class="m-0 p-histoire"> Notre but est d’avoir le circuit le plus court possible jusqu'à vous !</p>
         <p class="m-0 p-histoire"> Pour ça nous travaillons avec des artisans locaux au maximum.</p>
-        <p class="btn-histoire p-2 partenairesbis"> Marcel and fils & alpes alimentaires distributions </p>
+        <p class=" p-2 btn-histoire partenaires position-partenaires"> Marcel and fils & alpes alimentaires distributions </p>
     </div>
 
 

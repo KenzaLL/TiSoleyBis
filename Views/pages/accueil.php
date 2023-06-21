@@ -1,13 +1,16 @@
+<div class="accueil">
 
-  <div class="bg-acc">
-    <h1 class="titre">Bienvenue chez Ti'Soley !</h1>
+  <h1 class="titre">Bienvenue chez Ti'Soley !</h1>
+  <div class="block m-5">
+  
+
+  <button class="custom-btn btn-12"> <a href="commande"> <span class> Nos pizzas vous attendent ! </span><span>Commandez maintenant !</span></button></a>
+
+
+
   </div>
-  <div class="block">
-    <a href="commande.html" class="cta">
-      Commandez maintenant
-      <span>Découvrez nos délicieuses pizzas faites avec amour.</span>
-    </a>
-  </div>
+  
+</div>
 
     <!-- background avec 4 icones -->
 
@@ -41,7 +44,7 @@
 
   <div class="d-flex justify-content-between p-4"> 
     <h2 class="text-white p-2 m-2"> Qu'est-ce qu'on mange ? </h2>
-        <a class="carte"href=""> Voir la carte complète</a>
+        <a class="carte"href="commande"> Voir la carte complète</a>
 
   </div>
 
