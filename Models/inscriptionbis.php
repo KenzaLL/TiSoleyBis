@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require_once 'connexionBDD.php';
 
 // Vérification de la soumission du formulaire
@@ -25,7 +23,7 @@ if (isset($_POST['submit'])) {
  $statement->bindParam(':email', $email); // Liaison de l'e-mail
  $statement->bindParam(':numberphone', $numberphone); // Liaison du numéro de téléphone
  $statement->bindParam(':password', $hashedPassword); // Liaison du mot de passe haché
- 
+
 // Exécution de la requête
 if ($statement->execute()) {
  $email = $_POST['email']; // Récupérer l'e-mail de l'utilisateur inséré
@@ -41,5 +39,7 @@ if ($statement->execute()) {
 $content = ob_get_clean();
 
 $title = "Inscription";
+
+
 
 ?>

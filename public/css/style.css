@@ -30,6 +30,12 @@ a {
     width: 100%;
 }
 
+.dropdown-item:hover {
+    background-color: orange;
+}
+
+
+
 .nav-a { 
     color: white !important;
 }
@@ -61,87 +67,68 @@ a {
 
 .titre { 
     text-align: center;
-    padding: 20px;
+    /* padding-top: 2%; */
+    padding-top: 4%;
+    margin-top: 0%;
     color: white;
+    margin-right: 14%;
     font-size: 47px;
 }
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}  
 
 /* call to action page d'accueil */
 
 
-
-.btn-12{
-    
-    right: 20px;
-    bottom: 20px;
-    border:none;
-    box-shadow: none;
-
-  height: 50px;
+  /* 7 */
+  .btn-5 {
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
     line-height: 42px;
-    -webkit-perspective: 230px;
-    perspective: 230px;
-    margin-left: 45%;
+    margin-top: -1%;
+    margin-right: 17%;
+    font-size: 20px ;
+    padding: 10px;
+    border: none;
+    width: 30%
   }
-  .btn-12 span {
-    background: rgb(0,172,238);
-  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 100px;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    border-radius: 5px;
-    margin:0;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+  .btn-5:hover {
+    color: #ed8005;
+   background-color: #eb850f;
+     box-shadow:none;
   }
-  .btn-12 span:nth-child(1) {
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #eb850f;
     box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 5px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
-    -webkit-transform: rotateX(90deg);
-    -moz-transform: rotateX(90deg);
-    transform: rotateX(90deg);
-    -webkit-transform-origin: 50% 50% -20px;
-    -moz-transform-origin: 50% 50% -20px;
-    transform-origin: 50% 50% -20px;
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px rgba(201, 11, 11, 0.2),
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
   }
-.btn-12 span:nth-child(2) {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: 50% 50% -20px;
-    -moz-transform-origin: 50% 50% -20px;
-    transform-origin: 50% 50% -20px;
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
   }
-  .btn-12:hover span:nth-child(1) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    transform: rotateX(0deg);
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
   }
-  .btn-12:hover span:nth-child(2) {
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-   color: transparent;
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-  }
-
-
+  
+  
 
 /* fin */
 /* background avec 4 icones de la page accueil */
@@ -161,7 +148,7 @@ a {
     background-repeat: no-repeat;
 }
 
-.container {
+.container2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,6 +158,7 @@ a {
 .icon {
     text-align: center;
     margin: 0 20px;
+    width: 11%;
 }
 
 .icon img {
@@ -282,6 +270,14 @@ a {
 
 /* Page COMMANDE EN LIGNE*/
 
+.background {
+    background-image: url(https://img.freepik.com/photos-gratuite/delicieuse-pizza-napolitaine-planche_78826-3346.jpg?w=900&t=st=1682437566~exp=1682438166~hmac=fd0b9fbf0acfecf9cf7e39be523080e158756ca611ce7cdd407229458040a43d);
+    background-size: cover;
+    width: 100%; 
+    height: 60vh;
+}
+
+
 .accueil { 
     background-image: url(../images/bgAcc.png);
     background-size: cover;
@@ -325,6 +321,11 @@ a {
     border: 1px solid #ce561c;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 50%;
+    object-fit: cover !important;
+}
 
 /* ajouter au panier */
 #btn-commande { 
@@ -354,7 +355,6 @@ text-decoration: none;
 color: rgb(255, 255, 255);
 box-shadow: 5px 5px 800px 5px #2e2113;
 }
-
 
 
 
@@ -475,9 +475,9 @@ margin-bottom: 1%;
 
 .partenaires {
     margin: 1%;
-    width: 40%;
     border: 1px solid #ce561c;
     border-radius: 10px 10px 10px 10px;
+    object-fit: cover;
 }
 
 .partenairesbis {
@@ -501,6 +501,11 @@ margin-bottom: 1%;
     font-size: 20px;
 
 }
+
+.img-contact {
+    padding: 3%;
+}
+
 
 /* span */
 .color-contact { 
@@ -526,17 +531,10 @@ margin-bottom: 1%;
     color: white;
     padding-top: 15px;
     font-size: 16px;
-    }
+}
 
-.reseaux-2 {
-    display: flex;
-    justify-content: space-around;
-    background-color: #ce561c;
-    color: white;
-    padding-top: 15px;
-    font-size: 16px;
-    margin-top: 15% !important;
-    }
+
+
 
 
 
@@ -585,20 +583,6 @@ margin-bottom: 1%;
         border-radius: 4px;
       }
    
-
-
-    /* panier  */
-    .panier {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        padding: 5%;
-        overflow: hidden;
-        margin: 20px;
-      }
-  
-      .total {
-        display: flex;
-        justify-content: end;
-        margin-right: 3%;
-      }
+.table {
+    --bs-table-color: #fff;
+}

@@ -4,7 +4,7 @@
   <div class="block m-5">
   
 
-  <button class="custom-btn btn-12"> <a href="commande"> <span class> Nos pizzas vous attendent ! </span><span>Commandez maintenant !</span></button></a>
+  <button class="custom-btn btn-5 text-white"> Commandez maintenant ! </button>
 
 
 
@@ -12,12 +12,15 @@
   
 </div>
 
+
+
+
     <!-- background avec 4 icones -->
 
 
 
     <div class="container1">
-<div class="container">
+<div class="container2">
     <div class="icon">
     <img src="./public/images/pizza.svg" alt="Icône 2">
       <span>Pizzas artisanales </span>
@@ -53,13 +56,13 @@
         <div class="image-container2 art">
             <div class="image-wrapper">
                 <img src="./public/images/pizza.jpg" alt="Votre image" width="400px" >
-                <button class="center-button animated-button"> PIZZAS </button>
+               <a href="commande"  class="center-button"> PIZZAS </a>
             </div>
         </div>
         <div class="image-container2 art2">
             <div class="image-wrapper">
                 <img src="./public/images/lasagnes.jpg" alt="Votre image" width="400px" >
-                <button class="center-button"> PRÉPARATIONS MAISONS </button>
+                <a href="preparations" class="center-button"> PRÉPARATIONS MAISONS</a>
             </div>
         </div>
     </section> 
@@ -67,13 +70,13 @@
         <div class="image-container2 art2">
             <div class="image-wrapper">
                 <img src="./public/images/canette.jpg" alt="Votre image" width="400px" >
-                <button class="center-button"> BOISSONS </button>
+                <a href="boissons" class="center-button"> BOISSONS </a>
             </div>
         </div>
         <div class="image-container2 art">
             <div class="image-wrapper">
                 <img src="./public/images/mousse.jpeg" alt="Votre image" width="400px" >
-                <button class="center-button"> DESSERTS </button>
+                <a href="desserts" class="center-button"> DESSERTS</a>
             </div>
         </div>
     </section> 

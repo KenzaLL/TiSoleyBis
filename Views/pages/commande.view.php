@@ -32,7 +32,7 @@ ob_start();
 
         <section class="d-flex flex-wrap justify-content-evenly m-3">
         <?php  
-        require  "./Models/commandebis.php";
+        require  "./Models/commande.php";
         ?>
         </section>
 

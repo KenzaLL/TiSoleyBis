@@ -14,7 +14,7 @@ ob_start();
         <p class="m-0 p-histoire"> Hormis les œufs qui proviennent de notre poulailler et les tomates de notre jardin, nos partenaires nous aident à vous régaler avec des produits locaux et d’une fraicheur exceptionnelle ! </p>
         <p class="m-0 p-histoire"> Notre but est d’avoir le circuit le plus court possible jusqu'à vous !</p>
         <p class="m-0 p-histoire"> Pour ça nous travaillons avec des artisans locaux au maximum.</p>
-        <p class=" p-2 btn-histoire partenaires position-partenaires"> Marcel and fils & alpes alimentaires distributions </p>
+        <p class="btn-histoire text-white text-center p-2 partenairesbis mt-5"> Marcel and fils & alpes alimentaires distributions </p>
     </div>
 
 
@@ -23,11 +23,11 @@ ob_start();
         <img class="m-3 partenaires"src="./public/images/alpes.jpg" alt="logo alpes distribution" width="500px" height="300px">
     </div>
 
-    <p class="btn-histoire text-white text-center p-2 partenairesbis"> Moulin pichard bio & La fromagerie du verdon </p>
+    <p class="btn-histoire text-white text-center p-2 partenairesbis mt-5"> Moulin pichard bio & La fromagerie du verdon </p>
 
     <div class="d-flex flex-wrap justify-content-center"> 
-        <img class="partenaires" src="./public/images/pichard.jpeg" alt="moulin pichard"width="500px" height="300px">
-        <img class="m-3 partenaires"src="./public/images/fromagerie.jpg" alt="logo de la fromagerie" width="500px" height="315px">
+        <img class="m-3 partenaires" src="./public/images/pichard.jpeg" alt="moulin pichard"width="500px" height="300px">
+        <img class="m-3 partenaires"src="./public/images/fromagerie.jpg" alt="logo de la fromagerie" width="500px" height="300px">
     </div>
 
     <?php 

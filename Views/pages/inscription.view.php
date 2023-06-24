@@ -1,14 +1,14 @@
 <?php 
 
 
-require 'inscriptionbis.php'
+require './Models/inscriptionbis.php'
 
 
 ?>
 
 
 <div class="body p-5">
-    <form method="post" action="inscription.php">
+    <form method="post" action="./Models/inscriptionbis.php">
       <div class="border m-5 p-4"> 
         <h2 class="titre text-white"> Création de votre compte </h2>
       <div class="mb-3 text-white">

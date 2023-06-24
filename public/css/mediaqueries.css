@@ -63,4 +63,28 @@
         border-radius: 6px 6px;
     }
 
+    .position-btn {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .btn-commande {
+        margin-top: 5%;
+    }
+
+    .titre-carte {
+        padding-top: 20%;
+        padding-right: 15%;
+        font-size: 30px;
+
+    }
+
+    .card-title {
+        font-size: 30px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
 }

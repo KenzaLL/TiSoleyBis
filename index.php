@@ -1,46 +1,58 @@
 <?php 
 
+session_start();
+
 if(empty($_GET['page'])){
 
-    require './Views/pages/accueil.php';
+    require './Views/pages/accueil.view.php';
     
 }else{
    switch($_GET['page']){
 
-        case "accueil" : require './Views/pages/accueil.php';
+        case "accueil" : require './Views/pages/accueil.view.php';
         break;
 
-        case "histoire" : require './Views/pages/histoire.php';
+        case "histoire" : require './Views/pages/histoire.view.php';
         break;
 
-        case "partenaires" : require './Views/pages/partenaires.php';
+        case "partenaires" : require './Views/pages/partenaires.view.php';
         break;
 
-        case "terredessences" : require './Views/pages/terredessences.php';
+        case "terredessences" : require './Views/pages/terredessences.view.php';
         break;
 
-        case "commande" : require './Views/pages/commande.php';
+        case "commande" : require './Views/pages/commande.view.php';
         break;
 
-        case "boissons" : require './Views/pages/commande-boissons.php';
+        case "boissons" : require './Views/pages/boissons.view.php';
         break;
 
-        case "preparations" : require './Views/pages/commande-lasagnes.php';
+        case "preparations" : require './Views/pages/lasagnes.view.php';
         break;
 
-        case "desserts" : require './Views/pages/commande-desserts.php';
+        case "desserts" : require './Views/pages/desserts.view.php';
         break;
 
-        case "contact" : require './Views/pages/contact.php';
+        case "contact" : require './Views/pages/contact.view.php';
         break;
 
-        case "inscription" : require './Views/pages/inscription.php';
+        case "inscription" : require './Views/pages/inscription.view.php';
         break;
 
-        case "connexion" : require './Views/pages/connexion.php';
+        case "connexion" : require './Views/pages/connexion.view.php';
         break;
 
-        case "panier" : require './Views/pages/panier.php';
+        case "deconnexion" : require './Models/deconnexion.php';
+        break;
+
+        case "crud" : require './CRUD/crud/crud.index.php';
+        break;
+
+        
+        case "mon_panier" : require './Views/pages/panier.php';
+        break;
+
+        case "add_card" : require './Controllers/add_card.php';
         break;
 
         }

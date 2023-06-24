@@ -2,10 +2,12 @@
 
 ob_start();
 
+
 ?>
 
+
         <div class="background">
-            <h1 class="titre nav-a titre-carte"> Notre carte </h1>
+            <h1 class="titre nav-a titre-carte "> Notre carte </h1>
         </div>
 
         <h2 class="mt-4 text-white phrase">
@@ -21,11 +23,10 @@ ob_start();
             <a class="btn btn-dark btn-commande"href="boissons"> Boissons </a>
         </div>
 
-
-        <section class="d-flex flex-wrap justify-content-evenly mt-4 p-5">
+        <section class="d-flex flex-wrap justify-content-evenly m-3">
 
         <?php 
-            require_once "./Models/commande-boissonsbis.php";
+        require_once "./Models/desserts.php";
         ?>
         </section>
 
@@ -33,7 +34,7 @@ ob_start();
 
 $content = ob_get_clean();
 
-$title = "Commande de boissons";
+$title = "Commande de desserts";
 
 require './Views/base.php';
 

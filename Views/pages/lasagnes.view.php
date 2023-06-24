@@ -26,7 +26,7 @@ ob_start();
         <section class="d-flex flex-wrap justify-content-evenly mt-4">
 
             <?php 
-            require_once "./Models/commande-lasagnesbis.php";
+            require_once "./Models/lasagnes.php";
             ?>
         </section>
 

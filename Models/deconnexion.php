@@ -3,6 +3,6 @@
 session_start();
 session_unset();
 session_destroy();
-header('Refresh:0;http://localhost/TiSoleyBis/');
+header('Location:http://localhost/TiSoleyBis/');
 
 ?>
