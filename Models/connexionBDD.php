@@ -3,10 +3,11 @@
 
 
 // Informations de connexion à la base de données
-$servername = "localhost"; // Nom du serveur de la base de données
-$username = "admin"; // Nom d'utilisateur de la base de données
-$password = "admin"; // Mot de passe de la base de données
-$dbname = "tisoley"; // Nom de la base de données
+$servername = "localhost"; // Nom du serveur
+$username = "admin"; // Nom d'utilisateur 
+$password = "admin"; // Mot de passe
+$dbname = "tisoley"; // Nom 
+ 
 // Création de la connexion PDO
 try {
     $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

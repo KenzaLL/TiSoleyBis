@@ -36,6 +36,6 @@ $content = ob_get_clean();
 
 $title = "Commande des préparations maisons";
 
-require './Views/base.php';
+require 'base.view.php';
 
 ?>

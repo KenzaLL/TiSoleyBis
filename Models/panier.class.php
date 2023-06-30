@@ -14,18 +14,16 @@ class panier {
     }
 
     public function total() {
-
+        $DB = new DB;
         $total = 0; 
         $ids = array_keys($_SESSION['panier']);
         if (!empty($ids)) {
             $products = [];
         } else {
-            $products = $DB->query('SELECT id, price FROM products WHERE id IN('.implode(',', $ids).')');
+            $products = $DB->query('SELECT id, price FROM pizza WHERE id IN('.implode(',', $ids).')');
         }
-        foreach ($products as $product) {
-            $total += $product->prix;
-        }
-        return $total;
+        
+        
     }
     
     public function add($product_id) {
@@ -39,8 +37,26 @@ class panier {
         }
     }
 
+    public function decrease($product_id) {
+
+        // si j'ai ce produit au panier ça fait -1
+        if(isset($_SESSION['panier'][$product_id])) {
+            $_SESSION['panier'][$product_id] --;
+            if($_SESSION['panier'][$product_id] < 1){
+                    unset($_SESSION['panier'][$product_id]);
+            }
+        }
+    }
+
+
     public function del($product_id) {
         unset($_SESSION['panier'][$product_id]);
         if(!empty($_SESSION['panier'])) {}
     }
+
 }
+
+    // public function save() {
+
+    // }
+

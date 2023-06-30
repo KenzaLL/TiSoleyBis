@@ -43,6 +43,6 @@ $content = ob_get_clean();
 
 $title = "Commande en ligne";
 
-require './Views/base.php';
+require 'base.view.php';
 
 ?>

@@ -24,7 +24,6 @@ ob_start();
 $content = ob_get_clean();
 
 $title = "Contact";
-
-require './Views/base.php';
+require 'base.view.php';
 
 ?>

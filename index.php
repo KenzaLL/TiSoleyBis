@@ -2,6 +2,15 @@
 
 session_start();
 
+function requireAdmin($file) { 
+    if ($_SESSION['is_admin']) {
+        require $file;
+        return true;
+    }
+    session_destroy();
+    header('Location: http://localhost/TiSoleyBis/connexion');
+}
+
 if(empty($_GET['page'])){
 
     require './Views/pages/accueil.view.php';
@@ -55,7 +64,15 @@ if(empty($_GET['page'])){
         case "add_card" : require './Controllers/add_card.php';
         break;
 
-        }
+        case "validation_commande" : require './Views/pages/validation.view.php';
+        break;
+        
+        case "validation_inscription" : require './Views/pages/validation.inscription.view.php';
+        break;
+
+        case "admin" : requireAdmin('./Views/pages/admin.view.php');
+        break;
+        }   
 }
 
 ?>

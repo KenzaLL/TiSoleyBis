@@ -4,6 +4,17 @@ ob_start();
 
 
 
+// requete http 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+  $product = $_POST['product'];
+  $total = $_POST['total'];
+
+  echo $total;
+  echo "<h1> $product </h1>";
+
+}
+
 ?>
 
 
@@ -81,6 +92,6 @@ $content = ob_get_clean();
 
 $title = "Page d'administrateur";
 
-require './Views/base.php';
+require './Views/pages/base.view.php';
 
 ?>

@@ -36,6 +36,6 @@ $content = ob_get_clean();
 
 $title = "Commande de desserts";
 
-require './Views/base.php';
+require 'base.view.php';
 
 ?>

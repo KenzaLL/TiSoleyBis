@@ -2,31 +2,35 @@
 /* téléphone */
 
 @media (max-width: 768px) { 
-
-    .titre-histoire {
-        font-size: 20px;
-    }
-
-    .p-histoire {
-        font-size: 12px;
-    }
-
+    
+    
     .container-img {
         display: flex;
         flex-direction: column;
     }
-
+    
     .partenaires {
         margin-top: 4%;
         padding: 0;
         font-size: 10px;
         
     }
-
+    
     .partenairesbis {
         margin-top: 4%;
         padding: 0;
-        font-size: 10px;
+        font-size: 16px;
+        
+    }
+    .img-contact {
+        margin: 5%;
+    }
+    .titre-histoire {
+        font-size: 20px;
+    }
+
+    .p-histoire {
+        font-size: 12px;
     }
 
     .site {
@@ -40,9 +44,6 @@
         margin-top: 5%;
     }
 
-    .img-contact {
-        margin: 5%;
-    }
 
     .titre {
         font-size: 20px;
@@ -86,5 +87,19 @@
 
     .card-text {
         font-size: 20px;
+    }
+
+    .message {
+        max-width: 300px;
+        padding: 15%;
+    }
+
+    .message-v {
+        max-width: 300px;
+        padding: 15%;
+    }
+
+    .btn-retour {
+        margin-top: 25%;
     }
 }

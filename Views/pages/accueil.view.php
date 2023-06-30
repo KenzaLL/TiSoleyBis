@@ -1,54 +1,40 @@
+
+
 <div class="accueil">
-
   <h1 class="titre">Bienvenue chez Ti'Soley !</h1>
-  <div class="block m-5">
-  
-
-  <button class="custom-btn btn-5 text-white"> Commandez maintenant ! </button>
-
-
-
-  </div>
-  
+    <div class="block m-5">
+      <a href="commande" class="custom-btn btn-5 text-white" > Commandez maintenant !</a>
+    </div>
 </div>
-
-
-
 
     <!-- background avec 4 icones -->
 
-
-
     <div class="container1">
-<div class="container2">
-    <div class="icon">
-    <img src="./public/images/pizza.svg" alt="Icône 2">
-      <span>Pizzas artisanales </span>
+      <div class="container2">
+        <div class="icon">
+        <img src="./public/images/pizza.svg" alt="Icône 2">
+        <span>Pizzas artisanales </span>
+        </div>
+        <div class="icon">
+        <img src="./public/images/france.png" alt="Icône 4">
+        <span> Circuit court</span>
+        </div>
+        <div class="icon">
+        <img src="./public/images/tomate.svg" alt="Icône 3">
+        <span>Produits locaux & de saison</span>
+        </div>
+        <div class="icon">
+        <img src="./public/images/love.svg" alt="Icône 1">
+        <span>Confectionnées avec amour</span>
+        </div>
     </div>
-    <div class="icon">
-    <img src="./public/images/france.png" alt="Icône 4">
-     
-      <span> Circuit court</span>
-    </div>
-    <div class="icon">
-      <img src="./public/images/tomate.svg" alt="Icône 3">
-      <span>Produits locaux & de saison</span>
-    </div>
-    <div class="icon">
-    <img src="./public/images/love.svg" alt="Icône 1">
-      <span>Confectionnées avec amour</span>
-    </div>
-  </div>
-  </div>
-
-
+      </div>
 
   <!-- catégorie de commande -->
 
   <div class="d-flex justify-content-between p-4"> 
     <h2 class="text-white p-2 m-2"> Qu'est-ce qu'on mange ? </h2>
         <a class="carte"href="commande"> Voir la carte complète</a>
-
   </div>
 
 <div class="artpp">
@@ -89,7 +75,5 @@
 $content = ob_get_clean();
 
 $title = "Accueil";
-
-require './Views/base.php';
-
+require 'base.view.php';
 ?>

@@ -36,6 +36,6 @@ $content = ob_get_clean();
 
 $title = "Nos partenaires";
 
-require './Views/base.php';
+require 'base.view.php';
 
 ?>

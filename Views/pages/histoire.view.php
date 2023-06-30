@@ -33,6 +33,6 @@ $content = ob_get_clean();
 
 $title = "Notre histoire";
 
-require './Views/base.php';
+require 'base.view.php';
 
 ?>

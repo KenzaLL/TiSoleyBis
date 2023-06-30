@@ -35,6 +35,6 @@ $content = ob_get_clean();
 
 $title = "Commande de boissons";
 
-require './Views/base.php';
+require 'base.view.php';
 
 ?>
