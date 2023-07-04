@@ -72,6 +72,10 @@ if(empty($_GET['page'])){
 
         case "admin" : requireAdmin('./Views/pages/admin.view.php');
         break;
+
+        case "info_commande" : require './Controllers/save_commande.php';
+        break;
+
         }   
 }
 

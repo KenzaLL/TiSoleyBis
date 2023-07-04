@@ -12,7 +12,7 @@ ob_start();
 <?php
 
 
-$ids = array_keys($_SESSION['panier']);
+$ids = array_keys($_SESSION['panier'] ?? []);
 $products = [];
 $total = 0;
 
@@ -28,7 +28,6 @@ if (!empty($ids)) {
     }
 }
 ?>
-
 
 
 
@@ -90,15 +89,12 @@ if (!empty($ids)) {
 
 
                 <div class="card">
-                    <form method="POST" action="add_card">
-                        <input type="hidden" name="action" value="save">
                         <div class="card-body d-flex justify-content-between">
 
-                            <button class="btn btn-warning btn-block btn-lg btn-valide" type="submit"> Valider votre commmande </button>
+                            <a href="info_commande?action=confirm" class="btn btn-warning btn-block btn-lg btn-valide"> Valider votre commmande </a>
                             <p class="p-2">total : <td> <?php echo number_format($total, 2, ',', ' ') ?></td>
                             </p>
-                    </form>
-                </div>
+                        </div>
             </div>
 
         </div>

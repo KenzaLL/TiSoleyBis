@@ -10,7 +10,7 @@ if (!$product) {
 
 $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_ENCODED);
 
-if (!in_array($action,['add', 'delete' , 'decrease' , 'save' ])) {
+if (!in_array($action,['add', 'delete' , 'decrease' ])) {
     throw new Exception ('invalid action');
 }
 
