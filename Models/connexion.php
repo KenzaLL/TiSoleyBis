@@ -1,18 +1,6 @@
 <?php
 
-// Informations de connexion à la base de données
-$servername = "localhost";
-$username = "admin";
-$password = "admin";
-$dbname = "tisoley";
-
-// Connexion à la base de données
-try {
-    $connexion = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("La connexion a échoué : " . $e->getMessage());
-}
+require 'connexionBDD.php';
 
 // Vérification des informations de connexion
 if (isset($_POST['email']) && isset($_POST['password'])) {

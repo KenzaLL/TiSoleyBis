@@ -29,7 +29,7 @@ if ($statement->execute()) {
  $email = $_POST['email']; // Récupérer l'e-mail de l'utilisateur inséré
  echo "Inscription réussie."; // Affichage d'un message de réussite
  $_SESSION['email'] = $email; // Stocker l'e-mail de l'utilisateur dans la session
- header('Refresh:0.01; http://localhost/TiSoleyBi/'); // Redirection vers la page de connexion
+ header('Refresh:0.01; http://localhost/TiSoleyBis/'); // Redirection vers la page de connexion
 } else {
  echo "Erreur lors de l'inscription."; // Affichage d'un message d'erreur
 }

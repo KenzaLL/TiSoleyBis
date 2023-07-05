@@ -41,6 +41,7 @@ foreach (array_merge($commandes_today, $commandes_yesterday) as $commande) {
 
 <header class="d-flex justify-content-between container-admin">
   <h1 class="titre-admin">Pizzeria Dashboard</h1>
+  <a href="modification"> Ajouter , supprimer , modifier un produit </a>
 </header>
 
 <main class="block-admin">

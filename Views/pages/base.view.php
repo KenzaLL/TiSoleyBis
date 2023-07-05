@@ -44,27 +44,20 @@ ob_start();
                         </li>
                         <li class="nav-item"><a class="nav-link nav-a" href="contact">Contact</a></li>
                         <?php
+                        if (isset($_SESSION['is_admin'])) {
+                            echo '<li class="nav-item"><a class="nav-link nav-a" href="admin">Admin</a></li>';
+                        }
+
+
                         if (isset($_SESSION['firstname'])) {
-                            echo '<li class="nav-item">
-                <a class="nav-link text-white" href="deconnexion">Deconnexion</a>
-                </li>';
+                            echo '<li class="nav-item"><a class="nav-link text-white" href="deconnexion">Deconnexion</a></li>';
                         } else {
-                            echo '<li class="nav-item">
-                <a class="nav-link text-white" href="connexion">Connexion</a>
-            </li>';
+                            echo '<li class="nav-item"><a class="nav-link text-white" href="connexion">Connexion</a></li>';
                         }
                         ?>
                         <li class="nav-item">
                             <a class="nav-link nav-a" href="mon_panier">
                                 <img src="panier.png" alt="" width="25">
-
-                                <!-- // Vérifier si le panier n'est pas vide
-        // if (!empty($_SESSION['panier'])) {
-            // Compter le nombre d'objets dans le panier
-        //     $count = count($_SESSION['panier']);
-        //     echo "<span class='badge badge-custom'>$count</span>";
-        // }
-        ?> -->
                             </a>
                         </li>
                     </ul>

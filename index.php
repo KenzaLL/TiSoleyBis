@@ -16,7 +16,7 @@ if(empty($_GET['page'])){
     require './Views/pages/accueil.view.php';
     
 }else{
-   switch($_GET['page']){
+        switch($_GET['page']){
 
         case "accueil" : require './Views/pages/accueil.view.php';
         break;
@@ -54,9 +54,6 @@ if(empty($_GET['page'])){
         case "deconnexion" : require './Models/deconnexion.php';
         break;
 
-        case "crud" : require './CRUD/crud/crud.index.php';
-        break;
-
         
         case "mon_panier" : require './Views/pages/panier.php';
         break;
@@ -71,6 +68,9 @@ if(empty($_GET['page'])){
         break;
 
         case "admin" : requireAdmin('./Views/pages/admin.view.php');
+        break;
+
+        case "modification" : requireAdmin('./Crud/crud.index.php');
         break;
 
         case "info_commande" : require './Controllers/save_commande.php';

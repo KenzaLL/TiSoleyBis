@@ -68,7 +68,7 @@ if (!empty($ids)) {
                                     <form action="add_card">
                                         <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                         <input type="hidden" name="action" value="add">
-                                        <button class="btn btn-warning">+  </button>
+                                        <button class="btn btn-warning">+ </button>
                                     </form>
                                 </div>
                                 <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 d-flex justify-content-between">
@@ -89,16 +89,16 @@ if (!empty($ids)) {
 
 
                 <div class="card">
-                        <div class="card-body d-flex justify-content-between">
+                    <div class="card-body d-flex justify-content-between">
 
-                            <a href="info_commande?action=confirm" class="btn btn-warning btn-block btn-lg btn-valide"> Valider votre commmande </a>
-                            <p class="p-2">total : <td> <?php echo number_format($total, 2, ',', ' ') ?></td>
-                            </p>
-                        </div>
+                        <a href="info_commande?action=confirm" class="btn btn-warning btn-block btn-lg btn-valide"> Valider votre commmande </a>
+                        <p class="p-2">total : <td> <?php echo number_format($total, 2, ',', ' ') ?></td>
+                        </p>
+                    </div>
+                </div>
+
             </div>
-
         </div>
-    </div>
     </div>
 </section>
 

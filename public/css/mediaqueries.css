@@ -1,105 +1,111 @@
-
 /* téléphone */
+@media (max-width: 991px) {
+  .logo {
+    width: 70%;
+  }
 
-@media (max-width: 768px) { 
-    
-    
-    .container-img {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .partenaires {
-        margin-top: 4%;
-        padding: 0;
-        font-size: 10px;
-        
-    }
-    
-    .partenairesbis {
-        margin-top: 4%;
-        padding: 0;
-        font-size: 16px;
-        
-    }
+  .navbar-toggler-icon {
+    background-color: #ffba00;
+    border: 1px solid white;
+    border-radius: 6px 6px;
+  }
+}
+
+@media (max-width: 768px) {
     .img-contact {
-        margin: 5%;
-    }
-    .titre-histoire {
-        font-size: 20px;
-    }
-
-    .p-histoire {
-        font-size: 12px;
+    margin: 5%;
     }
 
     .site {
-        margin-left: 101px;
+    margin-left: 101px;
     }
 
     .size-contact {
-        font-size: 15px;
-    }
-    .img-terre {
-        margin-top: 5%;
+    font-size: 15px;
     }
 
 
-    .titre {
-        font-size: 20px;
+     .img-terre {
+    .container-img {
+      display: flex;
+      flex-direction: column;
     }
 
-    .btn-connexion {
-        font-size: 12px;
+    .partenaires {
+      margin-top: 4%;
+      padding: 0;
+      font-size: 10px;
     }
 
-    .logo {
-        width: 85%;
-        
+    .partenairesbis {
+      margin-top: 4%;
+      padding: 0;
+      font-size: 16px;
     }
+    margin-top: 5%;
+  }
 
-    .navbar-toggler-icon {
-        background-color: #ffba00;
-        border: 1px solid white;
-        border-radius: 6px 6px;
-    }
+  .titre-histoire {
+    font-size: 20px;
+  }
+
+  .p-histoire {
+    font-size: 12px;
+  }
+
+  .titre {
+    font-size: 20px;
+  }
+
+  .btn-connexion {
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #ffba00;
+    border: 1px solid white;
+    border-radius: 6px 6px;
+  }
 
     .position-btn {
-        display: flex;
-        flex-direction: column;
-        padding: 1%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
     }
 
     .btn-commande {
-        margin-top: 5%;
+    margin-top: 5%;
     }
 
-    .titre-carte {
-        padding-top: 20%;
-        padding-right: 15%;
-        font-size: 30px;
+  .titre-carte {
+    padding-top: 20%;
+    padding-right: 15%;
+    font-size: 30px;
+  }
 
-    }
+  .card-title {
+    font-size: 30px;
+  }
 
-    .card-title {
-        font-size: 30px;
-    }
+  .card-text {
+    font-size: 20px;
+  }
 
-    .card-text {
-        font-size: 20px;
-    }
+  .message {
+    max-width: 300px;
+    padding: 15%;
+  }
 
-    .message {
-        max-width: 300px;
-        padding: 15%;
-    }
+  .message-v {
+    max-width: 300px;
+    padding: 15%;
+  }
 
-    .message-v {
-        max-width: 300px;
-        padding: 15%;
-    }
-
-    .btn-retour {
-        margin-top: 25%;
-    }
+  .btn-retour {
+    margin-top: 25%;
+  }
 }

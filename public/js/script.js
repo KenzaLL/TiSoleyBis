@@ -47,9 +47,9 @@ const input = document.getElementById("enter");
 input.addEventListener("keyup", function () {
   for (let i = 0; i < card.length; i++) {
     if (!card[i].innerHTML.toUpperCase().includes(input.value.toUpperCase())) {
-      card[i].parentNode.parentNode.style.display = "none";
+      card[i].parentNode.parentNode.parentNode.style.display = "none";
     } else {
-      card[i].parentNode.parentNode.style.display = "unset";
+      card[i].parentNode.parentNode.parentNode.style.display = "unset";
     }
   }
 });

@@ -1,4 +1,11 @@
 <?php 
+session_start();
+if ($_SESSION['is_admin']) {
+} else {
+    session_destroy();
+    header('Location: http://localhost/TiSoleyBis/connexion');
+}
+
 
 require 'CRUD.php';
 
@@ -18,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $crud->update($id , $data);
     
-    header('Location:http://localhost/TiSoleyBis/CRUD/crud.index.php');
+    header('Location:http://localhost/TiSoleyBis/modification');
     exit();
 }
 
