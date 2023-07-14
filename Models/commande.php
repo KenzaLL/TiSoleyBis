@@ -7,7 +7,9 @@ require dirname(__FILE__).'/connexionBDD.php';
 
 
 
-    <?php $pizzas = $connexion->query('SELECT * FROM `pizza`'); ?>
+    <?php 
+    
+    $pizzas = $connexion->query('SELECT * FROM `pizza`'); ?>
 
 <?php foreach ($pizzas->fetchAll(PDO::FETCH_OBJ) as $pizza): ?>
       <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2 m-auto  mt-5 <?php echo $pizza->base; ?>">
@@ -21,10 +23,8 @@ require dirname(__FILE__).'/connexionBDD.php';
             <form action="add_card">
               <input type="hidden" name="product" value="<?php echo $pizza->id ?>">
               <input type="hidden" name="action" value="add">
-
               <button class="btn btn-commande text-white"> Ajouter au panier </button>
             </form>
-
           </div>
         </article>
       </div>

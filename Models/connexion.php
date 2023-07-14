@@ -3,7 +3,20 @@
 require 'connexionBDD.php';
 
 // Vérification des informations de connexion
-if (isset($_POST['email']) && isset($_POST['password'])) {
+//if (isset($_POST['email']) && isset($_POST['password'])) {
+
+    if(!empty($_POST['email']) && !empty($_POST['password'])) {
+        $secret ="6Ld1BgQnAAAAACd-oLkJve11mN8hoafSYREc0Ra1";
+        $response =htmlspecialchars($_POST['g-recaptcha-response']);
+        $remoteip = $_SERVER['REMOTE_ADDR'];
+        $request = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
+
+        $get = file_get_contents($request);
+        $decode = json_decode($get, true);
+
+        if ($decode['success'])
+
+
     $email = $_POST['email'];
     $password = $_POST['password'];
 

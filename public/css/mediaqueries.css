@@ -1,5 +1,29 @@
-/* téléphone */
-@media (max-width: 991px) {
+/* téléphone largeur de l'écran max affichage 991px*/
+@media (max-width: 991px)  {
+  
+
+  .navbar-toggler-icon {
+    background-color: #ffba00;
+    border: 1px solid white;
+    border-radius: 6px 6px;
+  }
+
+    .position-btn {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    }
+
+    .btn-commande {
+    margin-top: 5%;
+    }
+
+  .titre-carte {
+    padding-top: 20%;
+    padding-right: 15%;
+    font-size: 30px;
+  }
+
   .logo {
     width: 70%;
   }
@@ -9,9 +33,9 @@
     border: 1px solid white;
     border-radius: 6px 6px;
   }
-}
 
-@media (max-width: 768px) {
+
+
     .img-contact {
     margin: 5%;
     }
@@ -65,27 +89,8 @@
     width: 70%;
   }
 
-  .navbar-toggler-icon {
-    background-color: #ffba00;
-    border: 1px solid white;
-    border-radius: 6px 6px;
-  }
 
-    .position-btn {
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-    }
 
-    .btn-commande {
-    margin-top: 5%;
-    }
-
-  .titre-carte {
-    padding-top: 20%;
-    padding-right: 15%;
-    font-size: 30px;
-  }
 
   .card-title {
     font-size: 30px;

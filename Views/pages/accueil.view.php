@@ -1,22 +1,22 @@
 
 
 <div class="accueil">
-  <h1 class="titre">Bienvenue chez Ti'Soley !</h1>
-    <div class="block m-5">
-      <a href="commande" class="custom-btn btn-5 text-white" > Commandez maintenant !</a>
-    </div>
+    <h1 class="titre">Bienvenue chez Ti'Soley !</h1>
+        <div class="block m-5">
+        <a href="commande" class="custom-btn btn-5 text-white" > Commandez maintenant !</a>
+        </div>
 </div>
 
     <!-- background avec 4 icones -->
 
     <div class="container1">
-      <div class="container2">
-        <div class="icon">
-        <img src="./public/images/pizza.svg" alt="Icône 2">
-        <span>Pizzas artisanales </span>
-        </div>
-        <div class="icon">
-        <img src="./public/images/france.png" alt="Icône 4">
+        <div class="container2">
+            <div class="icon">
+            <img src="./public/images/pizza.svg" alt="Icône 2">
+            <span>Pizzas artisanales </span>
+            </div>
+            <div class="icon">
+            <img src="./public/images/france.png" alt="Icône 4">
         <span> Circuit court</span>
         </div>
         <div class="icon">
@@ -76,4 +76,5 @@ $content = ob_get_clean();
 
 $title = "Accueil";
 require 'base.view.php';
+
 ?>

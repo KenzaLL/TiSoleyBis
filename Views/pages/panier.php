@@ -37,7 +37,7 @@ if (!empty($ids)) {
             <div class="col-10">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h3 class="fw-normal mb-0 text-white">Votre panier</h3>
-                    <p class="p-2 text-white pay"> A retirer sur place et paiement en espèces </p>
+                    <p class="p-3 text-white pay border "> A retirer sur place et paiement en espèces </p>
                 </div>
 
                 <!-- parcours les produits -->
@@ -59,7 +59,7 @@ if (!empty($ids)) {
                                 <div class="col-md-3 col-lg-3 col-xl-2 d-flex align-items-center">
                                     <!-- moins -->
                                     <form action="add_card">
-                                        <button class="btn btn-warning"> - </button>
+                                        <button class="btn btn-connexion text-white"> - </button>
                                         <input type="hidden" name="action" value="decrease">
                                         <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                     </form>
@@ -68,7 +68,7 @@ if (!empty($ids)) {
                                     <form action="add_card">
                                         <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                         <input type="hidden" name="action" value="add">
-                                        <button class="btn btn-warning">+ </button>
+                                        <button class="btn btn-connexion text-white">+ </button>
                                     </form>
                                 </div>
                                 <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 d-flex justify-content-between">
@@ -77,7 +77,7 @@ if (!empty($ids)) {
                                 <form class="btn-supp" action="add_card">
                                     <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                     <input type="hidden" name="action" value="delete">
-                                    <button class="btn btn-danger"> Supprimer tout </button>
+                                    <button class="border p-3 text-white"> Supprimer tout </button>
                                 </form>
                                 <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                                     <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
@@ -91,7 +91,7 @@ if (!empty($ids)) {
                 <div class="card">
                     <div class="card-body d-flex justify-content-between">
 
-                        <a href="info_commande?action=confirm" class="btn btn-warning btn-block btn-lg btn-valide"> Valider votre commmande </a>
+                        <a href="info_commande?action=confirm" class="border p-3"> Valider votre commmande </a>
                         <p class="p-2">total : <td> <?php echo number_format($total, 2, ',', ' ') ?></td>
                         </p>
                     </div>

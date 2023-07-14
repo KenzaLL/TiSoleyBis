@@ -6,7 +6,8 @@
         <p> Pensez a l'honorer ! </p>
         <p>Merci pour votre achat !</p>
 
-        <button class="retour-button"> Retourner a l'accueil </button>
+        <a class="retour-button" href="accueil">Retourner a l'accueil</a>
+
     </div>
 
 </div>

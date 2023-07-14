@@ -563,27 +563,22 @@ margin-bottom: 1%;
 /* PAGE AMDIN DE LA CLIENTE */
 
 .container-admin {
-    background-color: #333;
+    background-color: rgb(217, 116, 34);
     color: #fff;
     padding: 20px;
 }
 
 .titre-admin {
     text-align: center;
+
 }
 
 .commande {
-    background-color: rgb(77, 217, 34);
+    background-color: rgb(217, 116, 34);
     padding: 20px;
 }
 
-.close-btn {
-    color: white;
-    padding: 20px;
-    background-color: red;
-    border: 1px solid #ce561c;
-    border-radius: 10px 10px 10px 10px;
-}
+
 
 .block-admin {
         padding: 20px;
@@ -610,6 +605,24 @@ margin-bottom: 1%;
 }
 
 /* validation commande */
+
+
+.p-commande {
+  
+    padding-right: 30px;
+}
+.border-time {
+
+    border: 1px solid #ce561c!important;
+    border-radius: 15px;
+    padding: 2%;
+    padding-right: 30px;
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+}
+
+.p-footer {
+    padding: 3.5%;
+}
 
 .page {
     margin: 0;

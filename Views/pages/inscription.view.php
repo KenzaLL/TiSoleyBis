@@ -1,8 +1,7 @@
 <?php 
 
 ob_start();
-require './Models/inscriptionbis.php'
-
+require './Models/inscriptionbis.php';
 
 ?>
 
@@ -47,7 +46,7 @@ require './Models/inscriptionbis.php'
     <?php 
 $content = ob_get_clean();
 
-$title = "Accueil";
+$title = "Inscription";
 
 require 'base.view.php';
 
