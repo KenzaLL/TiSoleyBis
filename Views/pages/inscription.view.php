@@ -30,19 +30,15 @@ require './Models/inscriptionbis.php';
           <label for="exampleInputEmail1" class="form-label"> Numéro de téléphone </label>
             <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"name="numberphone" required>
       </div>
-
-      <div class="form-check text-white">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1"> J'accepte les conditons </label>
-      </div>
-      <div class="mb-2 mt-3">
-        <button type="submit" class="btn text-white btn-connexion" name="submit"> Je m'inscris </button>
-      </div>
+      <div class="g-recaptcha" data-sitekey="6Ld1BgQnAAAAAI02vgXFQcVKhwgOstTGk5z7n48_"></div>
+            <br/>
+        <input type="submit" class="btn text-white mt-2 btn-connexion" value="Je m'inscris" name="submit">
       </div>
       </div>
       </div>
     </form>
 
+    
     <?php 
 $content = ob_get_clean();
 

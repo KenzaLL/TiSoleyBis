@@ -2,6 +2,18 @@
 
 require_once 'connexionBDD.php';
 
+if(!empty($_POST['email']) && !empty($_POST['password'])) {
+    $secret ="6Ld1BgQnAAAAACd-oLkJve11mN8hoafSYREc0Ra1";
+    $response =htmlspecialchars($_POST['g-recaptcha-response']);
+    $remoteip = $_SERVER['REMOTE_ADDR'];
+    $request = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response&remoteip=$remoteip";
+
+    $get = file_get_contents($request);
+    $decode = json_decode($get, true);}
+
+    if ($decode['success'])
+
+
 // Vérification de la soumission du formulaire
 if (isset($_POST['submit'])) {
     $lastname = $_POST['lastname']; // Récupération du nom de famille depuis le formulaire
