@@ -19,7 +19,7 @@ require dirname(__FILE__).'/connexionBDD.php';
             <h5 class="card-title text-white"><?php echo $pizza->title; ?></h5>
             <p class="card-text text-white">Base : <?php echo $pizza->base; ?></p>
             <p class="card-text text-white" style="height: 70px"><?php echo $pizza->description; ?></p>
-            <p class="card-text text-white"><?php echo number_format($pizza->price, 2, ','); ?></p>
+            <p class="card-text text-white"><?php echo number_format($pizza->price, 2, ','); ?> €</p>
             <form action="add_card">
               <input type="hidden" name="product" value="<?php echo $pizza->id ?>">
               <input type="hidden" name="action" value="add">

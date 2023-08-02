@@ -67,10 +67,10 @@ a {
 .titre { 
     text-align: center;
     /* padding-top: 2%; */
-    padding-top: 4%;
+    padding-top: 2%;
     margin-top: 0%;
     color: white;
-    margin-right: 14%;
+    margin-right: 3%;
     font-size: 47px;
 }
 
@@ -683,3 +683,5 @@ margin-bottom: 1%;
   .btn-quantity {
     color: orange;
   }
+
+

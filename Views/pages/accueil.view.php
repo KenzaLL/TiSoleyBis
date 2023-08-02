@@ -1,9 +1,9 @@
 
 
 <div class="accueil">
-    <h1 class="titre">Bienvenue chez Ti'Soley !</h1>
+    <h1 class="titre">Bienvenue chez Ti'Soley à Vinon sur Verdon!</h1>
         <div class="block m-5">
-        <a href="commande" class="custom-btn btn-5 text-white" > Commandez maintenant !</a>
+        <a href="commande" class="custom-btn btn-5 text-white" > Commandez maintenant <br> Venez récuperer votre commande sur place !</a>
         </div>
 </div>
 

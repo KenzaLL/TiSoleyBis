@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
 
 
 
-<h2>Modifer un produit </h2>
+<h2 class="crud-titre">Modifer un produit </h2>
 
 <form method="POST">
                 <div class="input"> 

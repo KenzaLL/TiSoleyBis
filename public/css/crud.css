@@ -16,11 +16,31 @@ table {
   
 .titre {
   text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: 21%;
+
+}
+
+
+#ajout {
+  background-color: green;
+}
+
+
+.titre1 {
+  color: #ce561c;
 }
 
 .border {
-  border: #000 solid;
-  padding: 5%;
+
+  background-color: #3d2c2c; 
+  border: 1px solid #ce561c!important;
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px rgb(0, 0, 0);
+  padding: 3%;
+  width: 50%;
 }
   
 .input { 
@@ -28,16 +48,35 @@ table {
 }
 
 
+.btn-retour {
+
+  color: rgb(255, 255, 255);
+  background-color: #f1812a;
+  border: #f5f5f5;
+  padding:10px 10px;
+  border-radius: 30px;
+
+}
+
+.read {
+  font-size: 20px;
+}
+
   .btn {
     display: inline-block;
     padding: 8px 16px;
     text-decoration: none;
-    background-color: #f2f2f2;
-    color: #000;
+    font-size: 18px;
+    background-color: #fa7c0e;
+    color: #ffffff;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 50px;
   }
   
+  #btn {
+    background-color: red;
+  }
+
   .btn:hover {
     background-color: #ddd;
   }
@@ -51,3 +90,15 @@ table {
     justify-content: space-between;
     align-items:center;
   }
+
+  .crud-titre { 
+    border: solid 4px rgb(239, 175, 49);
+    padding: 15px;
+    color: white;
+    background-color: orange;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+}
