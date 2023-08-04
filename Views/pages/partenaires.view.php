@@ -18,16 +18,16 @@ ob_start();
     </div>
 
 
-    <div class="d-flex flex-wrap justify-content-center"> 
-        <img class="m-3 partenaires"src="./public/images/marcel.png" alt="logo marcel and fils" width="500px" height="300px">
-        <img class="m-3 partenaires"src="./public/images/alpes.jpg" alt="logo alpes distribution" width="500px" height="300px">
+    <div class="partenaires d-flex flex-wrap justify-content-center"> 
+        <img class="m-3 partenaire"src="./public/images/marcel.png" alt="logo marcel and fils">
+        <img class="m-3 partenaire"src="./public/images/alpes.jpg" alt="logo alpes distribution">
     </div>
 
-    <p class="btn-histoire text-white text-center p-2 partenairesbis mt-5"> Moulin pichard bio & La fromagerie du verdon </p>
+    <p class="btn-histoire text-white text-center p-2 partenairesbis my-3"> Moulin pichard bio & La fromagerie du verdon </p>
 
-    <div class="d-flex flex-wrap justify-content-center"> 
-        <img class="m-3 partenaires" src="./public/images/pichard.jpeg" alt="moulin pichard"width="500px" height="300px">
-        <img class="m-3 partenaires"src="./public/images/fromagerie.jpg" alt="logo de la fromagerie" width="500px" height="300px">
+    <div class="partenaires d-flex flex-wrap justify-content-center"> 
+        <img class="m-3 partenaire" src="./public/images/pichard.jpeg" alt="moulin pichard">
+        <img class="m-3 partenaire"src="./public/images/fromagerie.jpg" alt="logo de la fromagerie">
     </div>
 
     <?php 

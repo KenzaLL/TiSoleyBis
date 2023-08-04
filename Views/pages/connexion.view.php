@@ -7,8 +7,8 @@ require './Models/connexion.php';
 ?>
 
 
-<div class="body p-5">
-        <div class="border m-5 p-4 colore"> 
+<div class="block-admin body pt-5 w-100">
+        <div class="border p-4 mt-3 colore"> 
     <h2 class="titre text-white" > Connectez vous </h2>
     <form id="formi" method="post" action="/TiSoleyBis/connexion">
         <div class="mb-4 my-5 text-white">

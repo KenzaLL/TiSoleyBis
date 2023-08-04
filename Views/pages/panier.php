@@ -30,14 +30,14 @@ if (!empty($ids)) {
 ?>
 
 
-
+<main class="block-admin">
 <section class="h-100" style="background-color: #000000;">
     <div class="container h-100 py-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-10">
-                <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="panierTop d-flex justify-content-between align-items-center mb-4">
                     <h3 class="fw-normal mb-0 text-white">Votre panier</h3>
-                    <p class="p-3 text-white pay border "> A retirer sur place et paiement en espèces </p>
+                    <p class="p-3 mt-1 text-white pay border "> A retirer sur place et paiement en espèces </p>
                 </div>
 
                 <!-- parcours les produits -->
@@ -48,36 +48,36 @@ if (!empty($ids)) {
                             <div class="row d-flex justify-content-between align-items-center">
                                 <div class="col-md-2 col-lg-2 col-xl-2">
                                     <td>
-                                        <img src="public/images/<?php echo $product->picture; ?>" alt="" width="110">
+                                        <img class="panierPictureProduct" src="public/images/<?php echo $product->picture; ?>" alt="" width="110">
                                     </td>
                                 </div>
-                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                <div class="namePrice col-md-3 col-lg-3 col-xl-3">
                                     <td> <?php echo $product->title ?> </td>
                                     <td> <?php echo number_format($product->price, 2, ',', ' ') ?></td>
                                 </div>
                                 <!-- button + et - -->
                                 <div class="col-md-3 col-lg-3 col-xl-2 d-flex align-items-center">
                                     <!-- moins -->
-                                    <form action="add_card">
+                                    <form class="moins" action="add_card">
                                         <button class="btn btn-connexion text-white"> - </button>
                                         <input type="hidden" name="action" value="decrease">
                                         <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                     </form>
-                                    <input type="text" class="form-control quantity-input" value="<?php echo $_SESSION['panier'][$product->id]; ?>">
+                                    <input type="text" class="valeur form-control quantity-input" value="<?php echo $_SESSION['panier'][$product->id]; ?>">
                                     <!-- + -->
-                                    <form action="add_card">
+                                    <form class="plus" action="add_card">
                                         <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                         <input type="hidden" name="action" value="add">
                                         <button class="btn btn-connexion text-white">+ </button>
                                     </form>
                                 </div>
-                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 d-flex justify-content-between">
+                                <div class="namePrice col-md-3 col-lg-2 col-xl-2 offset-lg-1 d-flex justify-content-between">
                                     <td> <?php echo number_format($product->price * $_SESSION['panier'][$product->id], 2, ',') ?> € </td>
                                 </div>
                                 <form class="btn-supp" action="add_card">
                                     <input type="hidden" name="product" value="<?php echo $product->id ?>">
                                     <input type="hidden" name="action" value="delete">
-                                    <button class="border p-3 text-white"> Supprimer tout </button>
+                                    <button class="border p-2 text-white w-100"> Supprimer tout </button>
                                 </form>
                                 <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                                     <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
@@ -89,10 +89,9 @@ if (!empty($ids)) {
 
 
                 <div class="card">
-                    <div class="card-body d-flex justify-content-between">
-
-                        <a href="info_commande?action=confirm" class="border p-3"> Valider votre commmande </a>
-                        <p class="p-2">total : <td> <?php echo number_format($total, 2, ',', ' ') ?></td>
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <a href="info_commande?action=confirm" class="confirmPanier border p-3"> Valider votre commmande </a>
+                        <p class="namePrice mt-3">total : <td> <?php echo number_format($total, 2, ',', ' ') ?></td>
                         </p>
                     </div>
                 </div>
@@ -101,6 +100,7 @@ if (!empty($ids)) {
         </div>
     </div>
 </section>
+</main>
 
 
 

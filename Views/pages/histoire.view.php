@@ -20,11 +20,11 @@ ob_start();
         <p class="m-0 p-histoire">   Je remercie la vie et tous ceux qui continue à croire en moi et j'adore ma vie !</p>
     </div>
 
-    <div class="d-flex justify-content-center container-img"> 
-        <img class="m-3 p-5"src="./public/images/cindy2.jpg" alt=""width="photo de la patronne" height="600px">
-        <img class="m-3 p-5"src="./public/images/cindy.jpg" alt="photo de la patronne" width="400px" height="500px">
-        <img class="m-3 p-5"src="./public/images/cindy3.jpg" alt="" width="photo de la patronne" height="600px">
-    </div>public/
+    <div class="histoire d-flex justify-content-center"> 
+        <img class="mt-2 p-5"src="./public/images/cindy2.jpg" alt="photo de la patronne">
+        <img class="mt-2 p-5"src="./public/images/cindy.jpg" alt="photo de la patronne">
+        <img class="mt-2 p-5"src="./public/images/cindy3.jpg" alt="photo de la patronne">
+    </div>
 
     
 <?php 

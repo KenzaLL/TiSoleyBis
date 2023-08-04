@@ -1,3 +1,4 @@
+
 /* téléphone largeur de l'écran max affichage 991px*/
 @media (max-width: 991px)  {
   
@@ -16,12 +17,15 @@
 
     .btn-commande {
     margin-top: 5%;
+    font-size: 3vmin;
+    }
+
+    .btn-nav {
+      margin-top: 2%; 
     }
 
   .titre-carte {
-    padding-top: 20%;
-    padding-right: 15%;
-    font-size: 30px;
+    font-size: 10vmin;
   }
 
   .logo {
@@ -34,11 +38,9 @@
     border-radius: 6px 6px;
   }
 
-
-
-    .img-contact {
-    margin: 5%;
-    }
+  .background {
+    height: 45vh;
+  }
 
     .site {
     margin-left: 101px;
@@ -49,24 +51,37 @@
     }
 
 
-     .img-terre {
+    .img-terre {
+      width: 80%;
+    }
+
     .container-img {
       display: flex;
       flex-direction: column;
     }
 
-    .partenaires {
+
+
+    .partenaire {
+      width: 80%;
+      height: 15vh;
       margin-top: 4%;
       padding: 0;
       font-size: 10px;
     }
 
+    .btn-histoire {
+      width: 70%;
+      margin: auto;
+  }
+  
+
     .partenairesbis {
       margin-top: 4%;
       padding: 0;
-      font-size: 16px;
-    }
-    margin-top: 5%;
+      font-size: 1.5vh;
+      margin-top: 5%;
+
   }
 
   .titre-histoire {
@@ -78,19 +93,64 @@
   }
 
   .titre {
-    font-size: 20px;
+    font-size: 4vmin;
   }
 
   .btn-connexion {
     font-size: 12px;
   }
 
+  .custom-btn {
+    width: 80% !important;
+    font-size: 3.5vmin ;
+}
+
   .logo {
     width: 70%;
   }
 
+  .inscription {
+    padding: 0 !important;
+  }
 
+  .icon {
+    font-size: 2.5vw;
+    width: 15%;
+  }
 
+  .art {
+    width: 100%;
+    height: 30vh;
+}
+.art2 {
+    width: 100%;
+    height: 20vh;
+}
+
+.produits {
+  height: 80vh;
+}
+
+.center-button {
+  font-size: 2.5vw;
+}
+
+.histoire {
+  display: block !important;
+  width: 100%;
+}
+
+.histoire>img {
+  width: 100%;
+  padding: 0 10% 0 10% !important;
+  margin-bottom: 2% !important;
+  object-fit: cover;
+}
+
+  .formulaireInscription {
+    width: 90% !important;
+    margin-top: 5% !important;
+  }
 
   .card-title {
     font-size: 30px;
@@ -100,8 +160,10 @@
     font-size: 20px;
   }
 
+  
+
   .message {
-    max-width: 300px;
+
     padding: 15%;
   }
 
@@ -112,5 +174,36 @@
 
   .btn-retour {
     margin-top: 25%;
+  }
+
+  .panierTop {
+    flex-direction: column;
+  }
+
+  .btn-supp {
+    left: 30%;
+    width: 70%;
+  }
+
+  .namePrice {
+    font-size: 3vmin;
+  }
+
+  .confirmPanier {
+    width: 65%;
+    font-size: 3.5vmin;
+    text-align: center;
+  }
+
+
+}
+
+@media (min-width: 411px) and (max-width: 991px) {
+  .partenaire {
+    width: 70%;
+    height: 30vh;
+    margin-top: 4%;
+    padding: 0;
+    font-size: 10px;
   }
 }

@@ -3,7 +3,7 @@
 <div class="accueil">
     <h1 class="titre">Bienvenue chez Ti'Soley à Vinon sur Verdon!</h1>
         <div class="block m-5">
-        <a href="commande" class="custom-btn btn-5 text-white" > Commandez maintenant <br> Venez récuperer votre commande sur place !</a>
+        <a href="commande" class="m-auto custom-btn btn-5 text-white" > Commandez maintenant <br> Venez récuperer votre commande sur place !</a>
         </div>
 </div>
 
@@ -23,9 +23,9 @@
         <img src="./public/images/tomate.svg" alt="Icône 3">
         <span>Produits locaux & de saison</span>
         </div>
-        <div class="icon">
+        <div class="icon ">
         <img src="./public/images/love.svg" alt="Icône 1">
-        <span>Confectionnées avec amour</span>
+        <span>Confectionnées avec amour</span>
         </div>
     </div>
       </div>

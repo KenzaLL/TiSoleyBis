@@ -1,3 +1,10 @@
+<?php 
+
+ob_start();
+?>
+
+
+<main class="block-admin">
 <div class="page">
 
     <div class="message">
@@ -11,6 +18,7 @@
     </div>
 
 </div>
+</main>
 
 
 

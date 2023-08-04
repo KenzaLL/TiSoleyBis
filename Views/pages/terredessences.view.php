@@ -12,10 +12,10 @@ ob_start();
     <div class="text-white text-center size-contact m-4 p-4"> 
         <p class="m-2"> Nous vous proposons une large gamme de produits 100% purs et naturels, issus de cueillettes sauvages et cultures naturelles. </p>
         <p class="m-2"> Découvrez nos transformations tels que les huiles essentielles, huiles végétales, macérats ou encore d'hydrolats.</p>
-        <p class="m-2"> Sans oublier les tisanes, aromates et alimentations diverses ( confits , sirops , confitures) </p>
+        <p class="m-2 mb-5"> Sans oublier les tisanes, aromates et alimentations diverses ( confits , sirops , confitures) </p>
+        <a class="btn-commande bg"  href="https://terredessences.net/"> Cliquez ici pour accéder à notre site internet </a>
     </div>
 
-    <a class="btn-commande site bg"  href="https://terredessences.net/"> Cliquez ici pour accéder à notre site internet </a>
 
     <div class="d-flex flex-wrap justify-content-evenly m-5 mt-5">
         <img class="img-terre"src="public/images/coffret.jpg" alt="coffret produits naturels" width="300px">

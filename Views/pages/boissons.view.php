@@ -5,7 +5,7 @@ ob_start();
 ?>
 
         <div class="background">
-            <h1 class="titre nav-a titre-carte"> Notre carte </h1>
+            <h1 class=" nav-a titre-carte"> Notre carte </h1>
         </div>
 
         <h2 class="mt-4 text-white phrase">
@@ -15,10 +15,10 @@ ob_start();
         <hr class="text-white"> 
 
         <div class="position-btn ">
-        <a class="btn btn-dark btn-commande"href="commande"> Pizzas </a>
-            <a class="btn btn-dark btn-commande" href="preparations"> Nos préparations maisons </a>
-            <a class="btn btn-dark btn-commande"href="desserts"> Desserts </a>       
-            <a class="btn btn-dark btn-commande"href="boissons"> Boissons </a>
+        <a class="btn btn-dark btn-nav"href="commande"> Pizzas </a>
+            <a class="btn btn-dark btn-nav" href="preparations"> Nos préparations maisons </a>
+            <a class="btn btn-dark btn-nav"href="desserts"> Desserts </a>       
+            <a class="btn btn-dark btn-nav"href="boissons"> Boissons </a>
         </div>
 
 

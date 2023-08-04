@@ -6,9 +6,9 @@ require './Models/inscriptionbis.php';
 ?>
 
 
-<div class="body p-5">
-    <form method="post" action="./Models/inscriptionbis.php">
-      <div class="border m-5 p-4"> 
+<div class="body inscription pt-5 w-100">
+    <form  method="post" action="./Models/inscriptionbis.php">
+      <div class="formulaireInscription border mb-5 w-75 m-auto"> 
         <h2 class="titre text-white"> Création de votre compte </h2>
       <div class="mb-3 text-white">
           <label for="exampleInputEmail1" class="form-label"> Nom </label>
@@ -30,7 +30,7 @@ require './Models/inscriptionbis.php';
           <label for="exampleInputEmail1" class="form-label"> Numéro de téléphone </label>
             <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"name="numberphone" required>
       </div>
-      <div class="g-recaptcha" data-sitekey="6Ld1BgQnAAAAAI02vgXFQcVKhwgOstTGk5z7n48_"></div>
+      <div class="inscriptionCaptcha g-recaptcha" data-sitekey="6Ld1BgQnAAAAAI02vgXFQcVKhwgOstTGk5z7n48_"></div>
             <br/>
         <input type="submit" class="btn text-white mt-2 btn-connexion" value="Je m'inscris" name="submit">
       </div>

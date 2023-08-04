@@ -86,15 +86,15 @@ ob_start();
         <div class="reseaux">
             <p>
                 <img src="./public/images/tel.png" alt="téléphone" width="40px">
-                <a href="tel:0618728007">06 18 72 80 07</a>
+                <a class="footerText" href="tel:0618728007">06 18 72 80 07</a>
             </p>
             <p>
                 <img src="./public/images/fb.png" alt="icone facebook" width="40px">
-                <a href="https://www.facebook.com/www.pizzatisoley.fr/">Ti'soley</a>
+                <a class="footerText" href="https://www.facebook.com/www.pizzatisoley.fr/">Ti'soley</a>
             </p>
             <p>
                 <img src="./public/images/maps.png" alt="icone google maps" width="40px">
-                <a href="https://www.google.com/maps/place/Pizza+Ti%E2%80%99Soley/@43.7284749,5.8098372,17z/data=!3m1!4b1!4m5!3m4!1s0x12cbd3b8286f69ad:0xca99ef3a40375879!8m2!3d43.728471!4d5.8120259?hl=fr">Où nous trouver</a>
+                <a class="footerText" href="https://www.google.com/maps/place/Pizza+Ti%E2%80%99Soley/@43.7284749,5.8098372,17z/data=!3m1!4b1!4m5!3m4!1s0x12cbd3b8286f69ad:0xca99ef3a40375879!8m2!3d43.728471!4d5.8120259?hl=fr">Où nous trouver</a>
             </p>
         </div>
     </footer>

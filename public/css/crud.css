@@ -1,3 +1,6 @@
+body {
+  background-color: #ccc;
+}
 /* CSS pour le tableau */
 table {
     width: 100%;
@@ -11,7 +14,8 @@ table {
   }
   
   th {
-    background-color: #f2f2f2;
+    background-color: #3a3a3a;
+    color: wheat;
   }
   
 .titre {

@@ -4,8 +4,8 @@
 
 // Informations de connexion à la base de données
 $servername = "localhost"; // Nom du serveur
-$username = "admin"; // Nom d'utilisateur 
-$password = "admin"; // Mot de passe
+$username = "root"; // Nom d'utilisateur 
+$password = ""; // Mot de passe
 $dbname = "tisoley"; // Nom 
 
 // Création de la connexion PDO
