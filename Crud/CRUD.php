@@ -4,8 +4,8 @@ class CRUD
 
 {
     private $host = 'localhost';
-    private $username = 'root';
-    private $password = '';
+    private $username = 'admin';
+    private $password = 'admin';
     private $database = 'tisoley';
     public $db;
 

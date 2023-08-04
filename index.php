@@ -67,14 +67,10 @@ if(empty($_GET['page'])){
         case "validation_inscription" : require './Views/pages/validation.inscription.view.php';
         break;
 
-        //case "admin" : requireAdmin('./Views/pages/admin.view.php');
-        //break;
-        case "admin" : require './Views/pages/admin.view.php';
+        case "admin" : requireAdmin('./Views/pages/admin.view.php');
         break;
 
-        //case "modification" : requireAdmin('./Crud/crud.index.php');
-        //break;
-        case "modification" : require './Crud/crud.index.php';
+        case "modification" : requireAdmin('./Crud/crud.index.php');
         break;
 
         case "info_commande" : require './Controllers/save_commande.php';
