@@ -24,12 +24,11 @@ $pizzas = $crud->read();
 
 <body>
 
-    <div class="flex">
+    <div class="d-flex justify-content-between">
         <h1 class="crud-titre"> Liste de produits de la pizzeria Ti'Soley </h1>
         <div>
             <a class="btn" id="ajout" href="Crud/create.php?id="> Ajouter un produit à la carte </a>
             <a class="btn" href="admin"> Revenir au Tableau De Bord </a>
-
         </div>
     </div>
 

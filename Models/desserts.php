@@ -15,7 +15,7 @@ require dirname(__FILE__).'/connexionBDD.php';
           <img class="card-img-top" src="public/images/<?php echo $desserts->picture; ?>">
           <div class="card-body m">
             <h5 class="card-title text-white"><?php echo $desserts->title; ?></h5>
-            <p class="card-text text-white" style="height: 70px"><?php echo $desserts->description; ?></p>
+            <p class="card-text text-white card-textbis" ><?php echo $desserts->description; ?></p>
             <p class="card-text text-white"><?php echo number_format($desserts->price, 2, ','); ?> €</p>
             <form action="add_card">
               <input type="hidden" name="product" value="<?php echo $desserts->id ?>">

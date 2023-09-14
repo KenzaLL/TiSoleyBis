@@ -195,6 +195,13 @@
     text-align: center;
   }
 
+  .card-title {
+    font-size: 7vmin !important;
+}
+.card-text {
+    font-size: 5vmin !important;
+}
+
 
 }
 

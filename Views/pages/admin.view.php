@@ -36,6 +36,14 @@ foreach (array_merge($commandes_today, $commandes_yesterday) as $commande) {
 
   $commande->products = $products;
 }
+
+
+require 'Models/connexionBDD.php';
+
+$stmt = $connexion->prepare("SELECT * FROM activationCommande WHERE id = 1");
+$stmt->execute();
+$activ = $stmt->fetch(PDO::FETCH_ASSOC);
+$info = $activ['activation'];
 ?>
 
 
@@ -43,6 +51,15 @@ foreach (array_merge($commandes_today, $commandes_yesterday) as $commande) {
 <header class="d-flex justify-content-between container-admin">
   <h1 class="titre-admin">Pizzeria Dashboard</h1>
   <a href="modification" class="btn-nav"> Ajouter , supprimer , modifier un produit </a>
+
+  <form method="post" action="">
+<?php
+    if (!$info) {
+        echo '<input class="btn btn-success" type="submit" name="on" value="ON">';
+    }else { echo '<input class="btn btn-danger" type="submit" name="off" value="OFF">'; }
+?> 
+</form>
+
 </header>
 <main class="block-admin">
 
@@ -67,7 +84,33 @@ foreach (array_merge($commandes_today, $commandes_yesterday) as $commande) {
 </main>
 
 
+<?php
 
+
+$on = 1;
+$off = 0;
+
+if(isset($_POST['on'])){
+    $query = "UPDATE activationCommande SET activation = :activation WHERE id = :id";
+    $statement = $connexion->prepare($query);
+    
+    $statement->bindParam(':activation', $on);
+    $statement->bindParam(':id', $on);
+    $statement->execute();
+    echo "Le bouton ON a été pressé !";
+    header("Location: admin");
+}
+if(isset($_POST['off'])){
+  $query = "UPDATE activationCommande SET activation = :activation WHERE id = :id";
+  $statement = $connexion->prepare($query);
+  
+  $statement->bindParam(':activation', $off);
+  $statement->bindParam(':id', $on);
+  $statement->execute();
+  echo "Le bouton OFF a été pressé !";
+  header("Location: admin");
+}
+?>
 
 
 <?php

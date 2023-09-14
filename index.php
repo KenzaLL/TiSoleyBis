@@ -76,6 +76,9 @@ if(empty($_GET['page'])){
         case "info_commande" : require './Controllers/save_commande.php';
         break;
 
+        case "test" : require './Views/pages/pageTest.php';
+        break;
+
         }   
 }
 

@@ -12,7 +12,7 @@ require dirname(__FILE__).'/connexionBDD.php';
           <img class="card-img-top" src="public/images/<?php echo $boissons->picture; ?>">
           <div class="card-body m">
             <h5 class="card-title text-white"><?php echo $boissons->title; ?></h5>
-            <p class="card-text text-white" style="height: 70px"><?php echo $boissons->description; ?></p>
+            <p class="card-text text-white card-textbis"><?php echo $boissons->description; ?></p>
             <p class="card-text text-white"><?php echo number_format($boissons->price, 2, ','); ?> €</p>
             <form action="add_card">
               <input type="hidden" name="product" value="<?php echo $boissons->id ?>">
@@ -23,3 +23,5 @@ require dirname(__FILE__).'/connexionBDD.php';
         </article>
       </div>
     <?php endforeach; ?>
+
+    

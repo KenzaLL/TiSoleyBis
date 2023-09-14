@@ -28,11 +28,6 @@ table {
 }
 
 
-#ajout {
-  background-color: green;
-}
-
-
 .titre1 {
   color: #ce561c;
 }
@@ -80,6 +75,11 @@ table {
   #btn {
     background-color: red;
   }
+
+  #ajout {
+    background-color: green;
+  }
+  
 
   .btn:hover {
     background-color: #ddd;
